@@ -22,7 +22,7 @@ Research findings summarize published studies and link to them. Advocacy recomme
 ::: research
 - Worldwide, about **18%** of adolescents gambled in the past year (17.9%), and about **10%** gambled online.[^tran2024][^wardle2024]
 - In Minnesota's 2022 student survey, **7.9%** of students in grades 8, 9 and 11 gambled weekly or more often.[^king2025]
-- In a 2023 NCAA survey of 18- to 22-year-olds, **58%** had done at least one sports betting activity.[^ncaa2023]
+- In a 2023 NCAA survey of 18- to 22-year-olds, **58%** of respondents had done at least one sports betting activity.[^ncaa2023]
 :::
 
 **Limitations.** The global estimates combine studies that measured gambling differently, and there were too few studies to estimate how many adolescents have gambling problems worldwide. Most US states don't ask about gambling in their school surveys, so there is no reliable national figure for US teenagers. The NCAA survey used an online panel and was not peer-reviewed.
@@ -34,7 +34,7 @@ Reviews of school-based gambling education agree on two things.
 
 **Programs improve knowledge and beliefs.** Every study in a 2017 systematic review found effects on knowledge, perceptions or beliefs about gambling.[^keen2017] A 2026 umbrella review of seven reviews found programs "consistently improved knowledge and beliefs."[^cabrera2026]
 
-**Effects on behaviour are much less certain.** In the 2017 review, only 9 of 19 studies measured gambling behaviour, and only 5 of those found a change, with short follow-up.[^keen2017] The 2026 umbrella review described behavioural effects as "modest, inconsistent, and rarely sustained."[^cabrera2026] Studies have found students' knowledge improving without a matching change in how they gamble.[^calado2020]
+**Effects on behaviour are much less certain.** In the 2017 review, only 9 of 19 studies measured gambling behaviour, and only 5 of those found a change, with short follow-up.[^keen2017] The 2026 umbrella review described behavioural effects as "modest, inconsistent, and rarely sustained."[^cabrera2026]
 :::
 
 **Limitations.** The evidence base is small and weak. All seven reviews in the 2026 umbrella review were rated "critically low" quality on a standard appraisal tool, and they overlap heavily in the studies they include.[^cabrera2026] A 2023 review of 32 studies rated only 9 as good quality.[^monreal2023] Few studies follow students for long enough to see whether gambling problems are prevented.
@@ -44,7 +44,7 @@ Reviews of school-based gambling education agree on two things.
 ### Advertising
 
 ::: research
-Studies consistently find that young people who see more gambling advertising have more positive attitudes towards gambling, stronger intentions to gamble and more gambling, with some evidence of a dose-response relationship.[^bouguettaya2020]
+Across age groups, including studies of young people, more exposure to gambling advertising is associated with more positive attitudes towards gambling, stronger intentions to gamble and more gambling, with some evidence of a dose-response relationship.[^bouguettaya2020]
 :::
 
 **Limitations.** Most studies are cross-sectional. Researchers disagree about whether the evidence shows advertising causes these effects: one review found no longitudinal studies that could test it,[^newall2019] while an umbrella review judged the evidence consistently supportive of a causal link, especially for young people.[^mcgrane2023]
@@ -125,11 +125,10 @@ If your school takes something on, we'd like to hear about it: [{{CONTACT}}](mai
 [^ncaa2023]: NCAA. *NCAA releases sports wagering survey data*. May 24, 2023. [ncaa.org](https://www.ncaa.org/news/2023/5/24/media-center-ncaa-releases-sports-wagering-survey-data.aspx).
 [^keen2017]: Keen B, Blaszczynski A, Anjoul F. Systematic review of empirically evaluated school-based gambling education programs. *Journal of Gambling Studies*. 2017;33(1):301–325. [doi:10.1007/s10899-016-9641-7](https://doi.org/10.1007/s10899-016-9641-7).
 [^cabrera2026]: Cabrera-Perona V, Tirado González S, Lloret-Irles D. Preventing gambling among adolescents: an umbrella review of school-based prevention programmes. *Journal of Prevention*. Published online October 2026. [doi:10.1007/s10935-026-00957-z](https://doi.org/10.1007/s10935-026-00957-z). Summarized from the abstract.
-[^calado2020]: Calado F, Alexandre J, Rosenfeld L, et al. The efficacy of a gambling prevention program among high-school students. *Journal of Gambling Studies*. 2020;36:573–595. [doi:10.1007/s10899-019-09908-2](https://doi.org/10.1007/s10899-019-09908-2).
 [^monreal2023]: Monreal-Bartolomé A, et al. Preventive gambling programs for adolescents and young adults: a systematic review. *International Journal of Environmental Research and Public Health*. 2023;20(6):4691. [doi:10.3390/ijerph20064691](https://doi.org/10.3390/ijerph20064691).
 [^bouguettaya2020]: Bouguettaya A, Lynott D, Carter A, et al. The relationship between gambling advertising and gambling attitudes, intentions and behaviours: a critical and meta-analytic review. *Current Opinion in Behavioral Sciences*. 2020;31:89–101. [doi:10.1016/j.cobeha.2020.02.010](https://doi.org/10.1016/j.cobeha.2020.02.010).
 [^newall2019]: Newall PWS, Moodie C, Reith G, et al. Gambling marketing from 2014 to 2018: a literature review. *Current Addiction Reports*. 2019;6(2):49–56. [doi:10.1007/s40429-019-00239-1](https://doi.org/10.1007/s40429-019-00239-1).
-[^mcgrane2023]: McGrane E, Wardle H, Clowes M, et al. What is the evidence that advertising policies could have an impact on gambling-related harms? A systematic umbrella review. *Public Health*. 2023;215:124–130. [doi:10.1016/j.puhe.2022.11.019](https://doi.org/10.1016/j.puhe.2022.11.019).
+[^mcgrane2023]: McGrane E, Wardle H, Clowes M, et al. What is the evidence that advertising policies could have an impact on gambling-related harms? A systematic umbrella review of the literature. *Public Health*. 2023;215:124–130. [doi:10.1016/j.puhe.2022.11.019](https://doi.org/10.1016/j.puhe.2022.11.019).
 [^spicer2022]: Spicer SG, Nicklin LL, Uther M, et al. Loot boxes, problem gambling and problem video gaming: a systematic review and meta-synthesis. *New Media & Society*. 2022;24(4):1001–1022. [doi:10.1177/14614448211027175](https://doi.org/10.1177/14614448211027175).
 [^ohid2023]: Office for Health Improvement and Disparities (UK). *Gambling-related harms evidence review: summary*. January 2023. [gov.uk](https://www.gov.uk/government/publications/gambling-related-harms-evidence-review/gambling-related-harms-evidence-review-summary--2).
 [^dowling2017]: Dowling NA, Merkouris SS, Greenwood CJ, et al. Early risk and protective factors for problem gambling: a systematic review and meta-analysis of longitudinal studies. *Clinical Psychology Review*. 2017;51:109–124. [doi:10.1016/j.cpr.2016.10.008](https://doi.org/10.1016/j.cpr.2016.10.008).

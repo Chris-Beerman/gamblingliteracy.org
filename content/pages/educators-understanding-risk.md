@@ -44,9 +44,9 @@ Researchers distinguish between factors linked to **participation** (whether a y
 ### What's linked to starting
 
 ::: research
-Reviews of adolescent gambling find that **gambling by parents, family and friends, and approving attitudes towards it** are consistently linked with young people gambling. Social influences appear to matter more for participation than psychological ones.[^riley2021] Participation is higher among older children and boys.[^ohid2023]
+A 2021 review of adolescent gambling found that **gambling by parents, family and friends, and approving attitudes towards it** were consistently linked with young people gambling. Social influences appeared to matter more for participation than psychological ones.[^riley2021] Participation is higher among older children and boys.[^ohid2023]
 
-In a 2026 Australian survey of 1,183 parents, **parents making it easier for their teenager to gamble** (buying them tickets, placing bets for them, gambling with them) was the strongest predictor of both teenage gambling and gambling problems.[^dittman2026]
+In a 2026 Australian survey of 1,183 parents, **parents making it easier for their teenager to gamble** (such as placing bets for them, or involving them in the parent's own gambling) was the strongest predictor of both teenage gambling and gambling problems.[^dittman2026]
 :::
 
 Most of these studies are cross-sectional snapshots, so they show what goes together, not what causes what. The practical point still holds: young people mostly learn gambling from the people around them, and adults often make the first access easy.
@@ -68,7 +68,7 @@ Most effects were small to medium. A UK government review of 39 reviews had the 
 ### Families
 
 ::: research
-Children who grow up with a parent who has a gambling problem are more likely to develop gambling problems themselves. In one Australian study of 612 adolescents, 23% of those who said their father had a gambling problem were at-risk or problem gamblers, compared with 5% of their peers.[^dowling2017b] The UK review rated the overall evidence on family influences as weak or insufficient, so the size of the effect is uncertain.[^ohid2023]
+Children who grow up with a parent who has a gambling problem are more likely to develop gambling problems themselves. In one Australian study of 612 adolescents, 23% of those who said their father had a gambling problem were at-risk or problem gamblers, compared with 5% of their peers.[^dowling2017b] The UK review rated its confidence in family influences as very low, or the evidence as insufficient, so the size of the effect is uncertain.[^ohid2023]
 :::
 
 ::: clinical
@@ -78,7 +78,7 @@ Many of the adults Chris Beerman treats for gambling describe a parent or grandp
 ## What protects young people
 
 ::: research
-Fewer studies look at protective factors than at risk factors. The longitudinal meta-analysis found two that predicted lower risk: **parental supervision** and **higher family socio-economic status**.[^dowling2017] Its authors note that protective factors, and factors at the level of schools and communities, are understudied.
+Fewer studies look at protective factors than at risk factors. Among the few protective factors the longitudinal meta-analysis identified were **parental supervision** and **higher socio-economic status**.[^dowling2017] Its authors note that protective factors, and factors at the level of schools and communities, are understudied.
 :::
 
 ::: practical
@@ -99,7 +99,7 @@ Risk isn't only about the individual. Young people today meet gambling and gambl
 ### Advertising
 
 ::: research
-Young people who see more gambling advertising tend to have more positive attitudes towards gambling, stronger intentions to gamble, and gamble more, with some evidence that more exposure goes with more gambling.[^bouguettaya2020] Researchers disagree about how strongly this shows cause. One literature review found no longitudinal studies that could test it,[^newall2019] while an umbrella review concluded the evidence consistently supports a causal relationship, especially for children and young people.[^mcgrane2023] The Lancet Public Health Commission calls the evidence base "suboptimal" but links exposure to higher rates of problem gambling.[^wardle2024]
+Across age groups, including studies of young people, more exposure to gambling advertising is associated with more positive attitudes towards gambling, stronger intentions to gamble and more gambling, with some evidence that more exposure goes with more gambling.[^bouguettaya2020] Researchers disagree about how strongly this shows cause. One literature review found no longitudinal studies that could test it,[^newall2019] while an umbrella review concluded the evidence consistently supports a causal relationship, especially for children and young people.[^mcgrane2023] The Lancet Public Health Commission concludes that exposure to gambling advertising and marketing is associated with increased rates of problem gambling.[^wardle2024]
 :::
 
 ### Loot boxes and gambling-like games
@@ -128,19 +128,19 @@ These are examples, not a screening tool. Many have ordinary explanations. If yo
 
 [Next: when to start the conversation →](/educators/when-to-start/)
 
-[^tran2024]: Tran LT, Wardle H, Colledge-Frisby S, et al. The prevalence of gambling and problematic gambling: a systematic review and meta-analysis. *Lancet Public Health*. 2024;9(8):e594–e613. [doi:10.1016/S2468-2667(24)00126-9](https://doi.org/10.1016/S2468-2667(24)00126-9). Global estimate pooled from many countries; the North American adolescent figure rests on a single study.
+[^tran2024]: Tran LT, Wardle H, Colledge-Frisby S, et al. The prevalence of gambling and problematic gambling: a systematic review and meta-analysis. *Lancet Public Health*. 2024;9(8):e594–e613. [doi:10.1016/S2468-2667(24)00126-9](https://doi.org/10.1016/S2468-2667(24)00126-9). No global estimate of adolescent problem gambling was possible because of limited data.
 [^king2025]: King SM, Adamyk K, Weinburd J, Stinchfield R. Frequent and problem gambling in public school students. *JAMA Pediatrics*. 2025;179(7):799–801. [doi:10.1001/jamapediatrics.2025.0925](https://doi.org/10.1001/jamapediatrics.2025.0925). Minnesota Student Survey 2022; a short research letter; problem gambling measured with a brief screen (BAGS ≥4).
-[^zhai2020]: Zhai ZW, Duenas GL, Wampler J, et al. Gambling, substance use and violence in male and female adolescents. *Journal of Gambling Studies*. 2020;36:1301–1324. [doi:10.1007/s10899-020-09931-8](https://doi.org/10.1007/s10899-020-09931-8). Cross-sectional, one state.
+[^zhai2020]: Zhai ZW, Duenas GL, Wampler J, Potenza MN. Gambling, substance use and violence in male and female adolescents. *Journal of Gambling Studies*. 2020;36(4):1301–1324. [doi:10.1007/s10899-020-09931-8](https://doi.org/10.1007/s10899-020-09931-8). Cross-sectional, one state.
 [^calado2017]: Calado F, Alexandre J, Griffiths MD. Prevalence of adolescent problem gambling: a systematic review of recent research. *Journal of Gambling Studies*. 2017;33(2):397–424. [doi:10.1007/s10899-016-9627-5](https://doi.org/10.1007/s10899-016-9627-5).
 [^riley2021]: Riley BJ, Oster C, Rahamathulla M, Lawn S. Attitudes, risk factors, and behaviours of gambling among adolescents and young people: a literature review and gap analysis. *International Journal of Environmental Research and Public Health*. 2021;18(3):984. [doi:10.3390/ijerph18030984](https://doi.org/10.3390/ijerph18030984). Studies from 2015–2020, mostly cross-sectional.
 [^ohid2023]: Office for Health Improvement and Disparities (UK). *Gambling-related harms evidence review: summary*. January 2023. [gov.uk](https://www.gov.uk/government/publications/gambling-related-harms-evidence-review/gambling-related-harms-evidence-review-summary--2). An umbrella review of 39 reviews, only 5 of which included longitudinal studies.
-[^dittman2026]: Dittman CK, Hunter MC, Gossner M, et al. The role of parents in adolescent gambling participation and gambling problems. *Journal of Gambling Studies*. 2026. [doi:10.1007/s10899-026-10520-4](https://doi.org/10.1007/s10899-026-10520-4). Cross-sectional, parent-reported, New South Wales.
+[^dittman2026]: Dittman CK, Hunter MC, Gossner M, et al. The role of parents in adolescent gambling participation and gambling problems. *Journal of Gambling Studies*. 2026;42(3):993–1019. [doi:10.1007/s10899-026-10520-4](https://doi.org/10.1007/s10899-026-10520-4). Cross-sectional, parent-reported, New South Wales.
 [^dowling2017]: Dowling NA, Merkouris SS, Greenwood CJ, Oldenhof E, Toumbourou JW, Youssef GJ. Early risk and protective factors for problem gambling: a systematic review and meta-analysis of longitudinal studies. *Clinical Psychology Review*. 2017;51:109–124. [doi:10.1016/j.cpr.2016.10.008](https://doi.org/10.1016/j.cpr.2016.10.008). 15 studies published 1990–2015.
 [^dowling2017b]: Dowling NA, Shandley KA, Oldenhof E, et al. The intergenerational transmission of at-risk/problem gambling: the moderating role of parenting practices. *American Journal on Addictions*. 2017;26(7):707–712. [doi:10.1111/ajad.12599](https://doi.org/10.1111/ajad.12599). Cross-sectional; Australian adolescents aged 12–18; the association with mothers' gambling was not significant.
 [^bouguettaya2020]: Bouguettaya A, Lynott D, Carter A, et al. The relationship between gambling advertising and gambling attitudes, intentions and behaviours: a critical and meta-analytic review. *Current Opinion in Behavioral Sciences*. 2020;31:89–101. [doi:10.1016/j.cobeha.2020.02.010](https://doi.org/10.1016/j.cobeha.2020.02.010).
 [^newall2019]: Newall PWS, Moodie C, Reith G, et al. Gambling marketing from 2014 to 2018: a literature review. *Current Addiction Reports*. 2019;6(2):49–56. [doi:10.1007/s40429-019-00239-1](https://doi.org/10.1007/s40429-019-00239-1).
-[^mcgrane2023]: McGrane E, Wardle H, Clowes M, et al. What is the evidence that advertising policies could have an impact on gambling-related harms? A systematic umbrella review. *Public Health*. 2023;215:124–130. [doi:10.1016/j.puhe.2022.11.019](https://doi.org/10.1016/j.puhe.2022.11.019).
+[^mcgrane2023]: McGrane E, Wardle H, Clowes M, et al. What is the evidence that advertising policies could have an impact on gambling-related harms? A systematic umbrella review of the literature. *Public Health*. 2023;215:124–130. [doi:10.1016/j.puhe.2022.11.019](https://doi.org/10.1016/j.puhe.2022.11.019).
 [^wardle2024]: Wardle H, Degenhardt L, Marionneau V, et al. The Lancet Public Health Commission on gambling. *Lancet Public Health*. 2024;9(11):e950–e994. [doi:10.1016/S2468-2667(24)00167-1](https://doi.org/10.1016/S2468-2667(24)00167-1).
 [^spicer2022]: Spicer SG, Nicklin LL, Uther M, et al. Loot boxes, problem gambling and problem video gaming: a systematic review and meta-synthesis. *New Media & Society*. 2022;24(4):1001–1022. [doi:10.1177/14614448211027175](https://doi.org/10.1177/14614448211027175).
 [^zendle2019]: Zendle D, Meyer R, Over H. Adolescents and loot boxes: links with problem gambling and motivations for purchase. *Royal Society Open Science*. 2019;6(6):190049. [doi:10.1098/rsos.190049](https://doi.org/10.1098/rsos.190049). Cross-sectional, UK, ages 16–18.
-[^grosemans2025]: Grosemans E, De Cock R, Bradt L, Soenens B. From gambling-like elements in and around video games to monetary gambling: testing a pathway model among adolescents. *International Gambling Studies*. 2025;25(3):472–494. [doi:10.1080/14459795.2025.2567896](https://doi.org/10.1080/14459795.2025.2567896).
+[^grosemans2025]: Grosemans E, De Cock R, Bradt L, Soenens B. From gambling-like elements in and around video games to monetary gambling: testing a pathway model among adolescents. *International Gambling Studies*. Published online November 2025. [doi:10.1080/14459795.2025.2567896](https://doi.org/10.1080/14459795.2025.2567896).

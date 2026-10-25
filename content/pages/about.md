@@ -92,7 +92,7 @@ Every page on this site follows these rules.
 
 Gambling Literacy takes no funding, advertising, sponsorship or data from gambling operators, sportsbooks, casinos, lotteries, game companies that sell loot boxes, prediction-market exchanges, or organizations they fund. It carries no ads and no tracking, and it collects nothing about visitors. Nothing on the site asks for, stores or transmits information about students.
 
-Interests to declare: the editor runs a private practice that treats gambling problems in adults and may benefit reputationally from this work. He also maintains a free educational website about stopping sports betting. Neither is promoted here beyond the links above.
+Interests to declare: the editor runs a private practice that treats gambling problems in adults and may benefit reputationally from this work. He also runs HowToStopBetting.com, a separate project for adults who want to stop sports betting. Neither is promoted here beyond the links above.
 
 The site has no organizational status beyond being Chris Beerman's personal initiative. It is not a nonprofit, not affiliated with any school district, and has no partners at launch. If that changes, this page will say so.
 

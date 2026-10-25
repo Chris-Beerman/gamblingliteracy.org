@@ -57,10 +57,10 @@ about:
   text: 'Gambling Literacy is written by <a href="/about/#editor">Chris Beerman, LCSW, CADC</a>, a clinical social worker in Chicago who treats adults with gambling problems and supports their families. It sits alongside the <a href="https://gambling-research.com/">Gambling Research Index</a>, which tracks the research, and his adult practice, <a href="https://www.chicagoaddictiontherapy.com/">Chicago Addiction Therapy</a>. It takes no money from the gambling industry. <a href="/about/">More about the initiative</a>.'
 ---
 
-Gambling has changed faster than most schools have. Since a 2018 Supreme Court decision allowed states to legalize sports betting, most have. Odds, parlays and "boosts" now run through the sports young people watch, and gambling-like features are built into the games they play.
+Gambling has changed faster than most schools have. Since the Supreme Court's 2018 decision in *Murphy v. NCAA* let states legalize sports betting, most have. Odds, parlays and "boosts" now run through the sports young people watch, and gambling-like features are built into the games they play.
 
 ::: research
-About **1 in 6 adolescents** worldwide gambled in the past year.[^tran2024] In Minnesota's 2022 statewide student survey, **7.9%** of 8th, 9th and 11th graders gambled weekly or more often.[^king2025]
+More than **1 in 6 adolescents** worldwide gambled in the past year.[^tran2024] In Minnesota's 2022 statewide student survey, **7.9%** of 8th, 9th and 11th graders gambled weekly or more often.[^king2025]
 :::
 
 The young people most at risk of harm are often the ones already struggling: those who are impulsive, depressed or using alcohol and drugs.[^ohid2023] And while school programs reliably teach students how gambling works, the research hasn't shown that knowledge alone prevents harm.[^cabrera2026] So adults matter: noticing, talking, limiting easy access and knowing where to turn.
