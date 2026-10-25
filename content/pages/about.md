@@ -41,7 +41,7 @@ It launched in October 2026 as a small site on purpose: [a starting guide for ed
 
 ## Who writes it {#editor}
 
-**Chris Beerman**, LCSW, CADC, is a clinical social worker in Chicago. He has worked in addiction treatment for about eight years, in hospital detox and residential programs and, since 2022, in his own private practice, [Chicago Addiction Therapy](https://www.chicagoaddictiontherapy.com/), where he treats adults with gambling, sports betting, high-risk trading and alcohol problems and works with their partners and families. He holds a Master of Social Work from Loyola University Chicago (2020), is licensed as a clinical social worker in Illinois (LCSW) and Minnesota (LICSW), and is a Certified Alcohol and Drug Counselor (CADC). He also edits the [Gambling Research Index](https://gambling-research.com/about/).
+**Chris Beerman**, LCSW, CADC, is a clinical social worker in Chicago. He has worked in addiction treatment for about eight years, in hospital detox and residential programs and, since 2022, in his own private practice, [Chicago Addiction Therapy](https://www.chicagoaddictiontherapy.com/), where he treats adults with gambling, sports betting, high-risk trading and alcohol problems and works with their partners and families. He holds a Master of Social Work from Loyola University Chicago (2020), is licensed as a clinical social worker in Illinois (LCSW) and Minnesota (LICSW), is a Certified Alcohol and Drug Counselor (CADC), and completed the Illinois Council on Problem Gambling's 30-hour problem gambling counselor training. He also edits the [Gambling Research Index](https://gambling-research.com/about/).
 
 He is not a teacher and does not claim to know a classroom better than the people who work in one. What he brings is the other end of the story. Many of the adults he treats started gambling young, often in ways that looked harmless at the time, and many of the parents he works with say they wish someone had told them what to look for sooner. Gambling Literacy is his attempt to move some of that knowledge upstream, to the adults who see young people every day.
 
@@ -92,7 +92,7 @@ Every page on this site follows these rules.
 
 Gambling Literacy takes no funding, advertising, sponsorship or data from gambling operators, sportsbooks, casinos, lotteries, game companies that sell loot boxes, prediction-market exchanges, or organizations they fund. It carries no ads and no tracking, and it collects nothing about visitors. Nothing on the site asks for, stores or transmits information about students.
 
-Interests to declare: the editor runs a private practice that treats gambling problems in adults and may benefit reputationally from this work. He also runs HowToStopBetting.com, a separate project for adults who want to stop sports betting. Neither is promoted here beyond the links above.
+Interests to declare: the editor runs a private practice that treats gambling problems in adults and may benefit reputationally from this work. He also maintains [HowToStopBetting.com](https://howtostopbetting.com/), a free, non-commercial educational website about stopping sports betting. Neither is promoted here beyond the links above.
 
 The site has no organizational status beyond being Chris Beerman's personal initiative. It is not a nonprofit, not affiliated with any school district, and has no partners at launch. If that changes, this page will say so.
 
