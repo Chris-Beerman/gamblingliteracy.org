@@ -22,6 +22,7 @@
 <link rel="stylesheet" href="/static/style.css">
 <script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "WebSite", "@id": site.url ~ "/#website", "name": site.title, "url": site.url ~ "/", "description": site.descriptor, "inLanguage": "en", "publisher": {"@type": "Person", "@id": site.url ~ "/about/#editor", "name": site.editor.name, "url": site.url ~ "/about/"}}|tojson }}</script>
 {% block head %}{% endblock %}
+{% if site.goatcounter %}<script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>{% endif %}
 </head>
 <body class="{% block body_class %}{% endblock %}">
 <a class="skip" href="#main">Skip to content</a>
@@ -60,7 +61,7 @@
     <div class="colophon-grid">
       <div>
         <p class="colophon-name">Gambling Literacy</p>
-        <p>{{ site.descriptor }}. Written and reviewed by {{ site.editor.name }}, {{ site.editor.credentials }}. No funding, advertising or data from gambling operators, and no tracking.</p>
+        <p>{{ site.descriptor }}. Written and reviewed by {{ site.editor.name }}, {{ site.editor.credentials }}. No funding, advertising or data from gambling operators. No ads, no cookies; visits are counted anonymously.</p>
         <p class="colophon-help"><strong>Worried about a young person right now?</strong> Call or text <a href="tel:{{ site.helplines.national.tel }}">{{ site.helplines.national.label }}</a> about gambling, or <a href="tel:988">988</a> in a crisis. <a href="/get-help/">More support</a>.</p>
       </div>
       <div>

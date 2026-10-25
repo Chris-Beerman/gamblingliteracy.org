@@ -16,6 +16,10 @@ contact_email: hello@gamblingliteracy.org
 
 github_repo: Chris-Beerman/gamblingliteracy.org
 
+# Anonymous, cookieless visit counts (goatcounter.com). The account code is the
+# subdomain: https://<code>.goatcounter.com. Leave empty to turn counting off.
+goatcounter: gamblingliteracy
+
 nav:
   - {label: For Educators, href: /educators/}
   - {label: Research & Advocacy, href: /research-and-advocacy/}

@@ -90,7 +90,7 @@ Every page on this site follows these rules.
 
 ## Independence and interests
 
-Gambling Literacy takes no funding, advertising, sponsorship or data from gambling operators, sportsbooks, casinos, lotteries, game companies that sell loot boxes, prediction-market exchanges, or organizations they fund. It carries no ads and no tracking, and it collects nothing about visitors. Nothing on the site asks for, stores or transmits information about students.
+Gambling Literacy takes no funding, advertising, sponsorship or data from gambling operators, sportsbooks, casinos, lotteries, game companies that sell loot boxes, prediction-market exchanges, or organizations they fund. It carries no ads and sets no cookies. Visits are counted anonymously with [GoatCounter](https://www.goatcounter.com/), an open-source counter that records which pages are viewed, the referring site, and the browser and screen size, but no personal information and no identifier that follows you between visits or sites. Nothing on the site asks for, stores or transmits information about students.
 
 Interests to declare: the editor runs a private practice that treats gambling problems in adults and may benefit reputationally from this work. He also maintains [HowToStopBetting.com](https://howtostopbetting.com/), a free, non-commercial educational website about stopping sports betting. Neither is promoted here beyond the links above.
 
