@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ site.title }}: {{ site.descriptor|lower }}{% endblock %}</title>
+<meta name="description" content="{% block description %}{{ site.descriptor }}.{% endblock %}">
+<link rel="canonical" href="{{ site.url }}{{ path }}">
+{% if page and page.noindex %}<meta name="robots" content="noindex">{% endif %}
+<link rel="icon" href="/static/mark.svg" type="image/svg+xml">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#FBF7F0">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ self.title() }}">
+<meta property="og:description" content="{{ self.description() }}">
+<meta property="og:url" content="{{ site.url }}{{ path }}">
+<meta property="og:image" content="{{ site.url }}/static/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "WebSite", "@id": site.url ~ "/#website", "name": site.title, "url": site.url ~ "/", "description": site.descriptor, "inLanguage": "en", "publisher": {"@type": "Person", "@id": site.url ~ "/about/#editor", "name": site.editor.name, "url": site.url ~ "/about/"}}|tojson }}</script>
+{% block head %}{% endblock %}
+</head>
+<body class="{% block body_class %}{% endblock %}">
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+  <div class="wrap masthead-row">
+    <a class="wordmark" href="/"><img src="/static/mark.svg" alt="" width="34" height="34"><span>Gambling <em>Literacy</em></span></a>
+    <nav aria-label="Main">
+      {% for item in nav %}
+      <a href="{{ item.href }}"{% if path.startswith(item.href) %} aria-current="{{ 'page' if path == item.href else 'true' }}"{% endif %}>{{ item.label }}</a>
+      {% endfor %}
+      <a class="nav-help" href="/get-help/"{% if path == '/get-help/' %} aria-current="page"{% endif %}>Get help</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+{% block content %}{% endblock %}
+</main>
+<footer class="colophon">
+  <div class="wrap">
+    <section class="family" aria-labelledby="family-h">
+      <h2 id="family-h" class="family-title">One clinician's work on gambling, in three places</h2>
+      <ul class="family-list">
+        {% for s in site.family %}
+        <li class="family-item{% if s.mark == 'literacy' %} is-here{% endif %}">
+          <span class="family-mark family-mark-{{ s.mark }}" aria-hidden="true"></span>
+          <div>
+            <p class="family-role">{{ s.role }}</p>
+            <p class="family-name">{% if s.mark == 'literacy' %}{{ s.name }} <span class="here">(you are here)</span>{% else %}<a href="{{ s.url }}">{{ s.name }}</a>{% endif %}</p>
+            <p class="family-blurb">{{ s.blurb }}</p>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+      <p class="family-more"><a href="/about/#three-sites">How the three sites fit together</a></p>
+    </section>
+    <div class="colophon-grid">
+      <div>
+        <p class="colophon-name">Gambling Literacy</p>
+        <p>{{ site.descriptor }}. Written and reviewed by {{ site.editor.name }}, {{ site.editor.credentials }}. No funding, advertising or data from gambling operators, and no tracking.</p>
+        <p class="colophon-help"><strong>Worried about a young person right now?</strong> Call or text <a href="tel:{{ site.helplines.national.tel }}">{{ site.helplines.national.label }}</a> about gambling, or <a href="tel:988">988</a> in a crisis. <a href="/get-help/">More support</a>.</p>
+      </div>
+      <div>
+        <p><a href="/educators/">For Educators</a><br><a href="/educators/understanding-risk/">Understanding risk</a><br><a href="/educators/when-to-start/">When to start the conversation</a><br><a href="/educators/conversation-guide/">Conversation guide</a><br><a href="/get-help/">Finding support</a></p>
+      </div>
+      <div>
+        <p><a href="/research-and-advocacy/">Research &amp; Advocacy</a><br><a href="/research-and-advocacy/#for-schools">Priorities for schools</a><br><a href="/about/">About</a><br><a href="/about/#standards">Editorial standards</a><br><a href="/style-guide/">Design &amp; illustration guide</a><br><a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></p>
+      </div>
+    </div>
+    <p class="colophon-fine">Educational information, not medical, legal or clinical advice, and not a screening or diagnostic tool. Text and illustrations are licensed <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: schools and youth organizations may print and share them with attribution. <a href="https://github.com/{{ site.github_repo }}">Source on GitHub</a>.</p>
+  </div>
+</footer>
+</body>
+</html>

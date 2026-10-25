@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}{{ page.seo_title or (page.title ~ " | " ~ site.title) }}{% endblock %}
+{% block description %}{{ page.description or site.descriptor }}{% endblock %}
+{% block head %}{% if page.schema %}<script type="application/ld+json">{{ page.schema|tojson }}</script>{% endif %}{% endblock %}
+{% block body_class %}page-{{ page.slug|replace('/', '-') }}{% if page.print %} printable{% endif %}{% endblock %}
+{% block content %}
+<div class="page-hero{% if page.hero %} has-art{% endif %}">
+  <div class="wrap page-hero-grid">
+    <div class="page-hero-text">
+      {% if page.parent %}{% set parent = pages[page.parent] %}<p class="crumb"><a href="/{{ parent.slug }}/">{{ parent.short or parent.title }}</a>{% if page.step %} <span aria-hidden="true">·</span> Part {{ page.step }} of 4{% endif %}</p>{% elif page.kicker %}<p class="crumb">{{ page.kicker }}</p>{% endif %}
+      <h1>{{ page.title }}</h1>
+      {% if page.deck %}<p class="deck">{{ page.deck }}</p>{% endif %}
+      {% if page.reviewed %}<p class="byline">By <a href="/about/#editor">{{ site.editor.name }}, {{ site.editor.credentials }}</a>. Reviewed {{ page.reviewed|fmt_date }}{% if page.next_review %}; next review {{ page.next_review|fmt_date('month') }}{% endif %}.</p>{% endif %}
+      {% if page.print %}<p class="print-actions"><button type="button" class="btn btn-ghost" onclick="window.print()">Print or save as PDF</button></p>{% endif %}
+    </div>
+    {% if page.hero %}<div class="page-hero-art">{{ figure(page.hero, page.hero_alt or '', none, 'figure figure-hero')|safe }}</div>{% endif %}
+  </div>
+</div>
+<div class="wrap page-body{% if toc|length > 2 and not page.no_toc %} has-toc{% endif %}">
+  {% if toc|length > 2 and not page.no_toc %}
+  <nav class="toc" aria-label="On this page">
+    <p class="toc-title">On this page</p>
+    <ol>{% for t in toc %}{% if t.id != 'sources-h' %}<li><a href="#{{ t.id }}">{{ t.name|striptags }}</a></li>{% endif %}{% endfor %}</ol>
+  </nav>
+  {% endif %}
+  <article class="prose">
+    {{ body|safe }}
+    {% if page.series %}
+    <nav class="series" aria-label="The educator guide">
+      <p class="series-title">The starting guide for educators</p>
+      <ol>
+        {% for s in ['educators/understanding-risk', 'educators/when-to-start', 'educators/conversation-guide', 'get-help'] %}{% set p = pages[s] %}
+        <li{% if p.slug == page.slug %} aria-current="page"{% endif %}><a href="/{{ p.slug }}/"><span class="series-n">{{ loop.index }}</span>{{ p.short or p.title }}</a></li>
+        {% endfor %}
+      </ol>
+    </nav>
+    {% endif %}
+  </article>
+</div>
+{% endblock %}

@@ -1,0 +1,103 @@
+"""Checks run on every build: links, anchors, images, alt text, titles."""
+import re
+from html.parser import HTMLParser
+from pathlib import Path
+
+import pytest
+
+from pipeline.build import Builder, SITE
+
+DOMAIN = "https://gamblingliteracy.org"
+
+
+class Collector(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.links, self.imgs, self.ids, self.title, self.desc, self.h1 = [], [], set(), None, None, 0
+        self._in_title = False
+
+    def handle_starttag(self, tag, attrs):
+        a = dict(attrs)
+        if "id" in a:
+            self.ids.add(a["id"])
+        if tag == "a" and "href" in a:
+            self.links.append(a["href"])
+        if tag == "img":
+            self.imgs.append(a)
+        if tag == "title":
+            self._in_title = True
+        if tag == "meta" and a.get("name") == "description":
+            self.desc = a.get("content")
+        if tag == "h1":
+            self.h1 += 1
+
+    def handle_endtag(self, tag):
+        if tag == "title":
+            self._in_title = False
+
+    def handle_data(self, data):
+        if self._in_title:
+            self.title = (self.title or "") + data
+
+
+@pytest.fixture(scope="session")
+def pages():
+    Builder().build()
+    out = {}
+    for f in SITE.rglob("*.html"):
+        c = Collector()
+        c.feed(f.read_text(encoding="utf-8"))
+        out[f] = c
+    return out
+
+
+def resolve(href: str) -> tuple[Path | None, str]:
+    path, _, frag = href.partition("#")
+    if path.startswith(DOMAIN):
+        path = path[len(DOMAIN):] or "/"
+    if not path.startswith("/"):
+        return None, frag
+    target = SITE / path.lstrip("/")
+    if path.endswith("/"):
+        target = target / "index.html"
+    return target, frag
+
+
+def test_internal_links_and_anchors(pages, ):
+    bad = []
+    for f, c in pages.items():
+        for href in c.links:
+            if href.startswith(("mailto:", "tel:", "http://", "https://")) and not href.startswith(DOMAIN):
+                continue
+            if href.startswith("#"):
+                if href[1:] and href[1:] not in c.ids:
+                    bad.append(f"{f.relative_to(SITE)}: missing anchor {href}")
+                continue
+            target, frag = resolve(href)
+            if target is None or not target.exists():
+                bad.append(f"{f.relative_to(SITE)}: broken link {href}")
+            elif frag and target.suffix == ".html" and frag not in pages[target].ids:
+                bad.append(f"{f.relative_to(SITE)}: missing anchor {href}")
+    assert not bad, "\n".join(bad)
+
+
+def test_images_exist_and_have_alt(pages):
+    bad = []
+    for f, c in pages.items():
+        for img in c.imgs:
+            if "alt" not in img:
+                bad.append(f"{f.relative_to(SITE)}: img without alt {img.get('src')}")
+            target, _ = resolve(img.get("src", ""))
+            if target is None or not target.exists():
+                bad.append(f"{f.relative_to(SITE)}: missing image {img.get('src')}")
+    assert not bad, "\n".join(bad)
+
+
+def test_every_page_has_title_description_and_one_h1(pages):
+    bad = [str(f.relative_to(SITE)) for f, c in pages.items() if not c.title or not c.desc or c.h1 != 1]
+    assert not bad, bad
+
+
+def test_no_unreplaced_placeholders():
+    bad = [str(f) for f in SITE.rglob("*.html") if re.search(r"\{\{|\}\}|:::", re.sub(r"<script.*?</script>", "", f.read_text(encoding="utf-8"), flags=re.S))]
+    assert not bad, bad

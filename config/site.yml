@@ -1,0 +1,45 @@
+# Site-wide settings. Edit freely; the build reads this file.
+
+title: Gambling Literacy
+descriptor: Gambling education for the adults who reach young people
+url: https://gamblingliteracy.org
+canonical_domain: gamblingliteracy.org
+alt_domain: gamblingliteracy.com     # forwards (301) to the .org in Squarespace
+
+editor:
+  name: Chris Beerman
+  credentials: LCSW, CADC
+
+# Set up forwarding for this address in Squarespace (Domains → gamblingliteracy.org
+# → Email → Email forwarding) before launch; see README, "Handoff".
+contact_email: hello@gamblingliteracy.org
+
+github_repo: Chris-Beerman/gamblingliteracy.org
+
+nav:
+  - {label: For Educators, href: /educators/}
+  - {label: Research & Advocacy, href: /research-and-advocacy/}
+  - {label: About, href: /about/}
+
+# The three sites. Shown in the footer of every page.
+family:
+  - name: Gambling Research Index
+    url: https://gambling-research.com/
+    role: Research
+    blurb: New gambling studies, policy and court news, indexed nightly.
+    mark: research
+  - name: Gambling Literacy
+    url: https://gamblingliteracy.org/
+    role: Education
+    blurb: Gambling education and advocacy for adults who work with young people.
+    mark: literacy
+  - name: Chicago Addiction Therapy
+    url: https://www.chicagoaddictiontherapy.com/
+    role: Treatment, adults 18+
+    blurb: Chris Beerman's private practice. Treats adults and supports their families; does not treat minors.
+    mark: therapy
+
+# Shown on every page. Keep these current; each is linked from /get-help/.
+helplines:
+  national: {label: "1-800-MY-RESET", tel: "+18006973738", note: "National Problem Gambling Helpline, call or text, 24/7"}
+  crisis: {label: "988", tel: "988", note: "Suicide & Crisis Lifeline, call or text, 24/7"}

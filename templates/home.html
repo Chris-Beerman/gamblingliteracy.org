@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% block title %}{{ page.seo_title }}{% endblock %}
+{% block description %}{{ page.description }}{% endblock %}
+{% block body_class %}page-home{% endblock %}
+{% block content %}
+<section class="home-hero">
+  <div class="wrap home-hero-grid">
+    <div class="home-hero-text">
+      <p class="eyebrow">{{ page.hero.eyebrow }}</p>
+      <h1>{{ page.hero.title|safe }}</h1>
+      <p class="deck">{{ page.hero.deck }}</p>
+      <p class="cta-row">
+        <a class="btn btn-primary" href="{{ page.hero.primary.href }}">{{ page.hero.primary.label }}</a>
+        <a class="btn btn-ghost" href="{{ page.hero.secondary.href }}">{{ page.hero.secondary.label }}</a>
+      </p>
+    </div>
+    <div class="home-hero-art">{{ figure('hero-conversation', page.hero.alt, none, 'figure figure-hero')|safe }}</div>
+  </div>
+</section>
+
+<section class="questions" aria-labelledby="q-h">
+  <div class="wrap">
+    <h2 id="q-h" class="section-h">{{ page.questions_title }}</h2>
+    <p class="section-deck">{{ page.questions_deck }}</p>
+    <ol class="q-grid">
+      {% for q in page.questions %}
+      <li class="q-card">
+        <img src="/static/illustrations/{{ q.spot }}.svg" alt="" width="200" height="200" class="q-spot">
+        <p class="q-n">Question {{ loop.index }}</p>
+        <h3>{{ q.q }}</h3>
+        <p>{{ q.a }}</p>
+        <p class="q-link"><a href="{{ q.href }}">{{ q.link }}<span aria-hidden="true"> →</span></a></p>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="why" aria-labelledby="why-h">
+  <div class="wrap why-grid">
+    <div class="prose why-prose">
+      <h2 id="why-h" class="section-h">{{ page.why_title }}</h2>
+      {{ body|safe }}
+    </div>
+  </div>
+</section>
+
+<section class="featured" aria-labelledby="feat-h">
+  <div class="wrap featured-card">
+    <div class="featured-art">{{ figure(page.featured.art, page.featured.alt, none, 'figure')|safe }}</div>
+    <div class="featured-text">
+      <p class="eyebrow">{{ page.featured.eyebrow }}</p>
+      <h2 id="feat-h">{{ page.featured.title }}</h2>
+      <p>{{ page.featured.text }}</p>
+      <ul class="check-list">{% for b in page.featured.bullets %}<li>{{ b }}</li>{% endfor %}</ul>
+      <p class="cta-row"><a class="btn btn-primary" href="{{ page.featured.href }}">{{ page.featured.cta }}</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="advocacy" aria-labelledby="adv-h">
+  <div class="wrap advocacy-grid">
+    <div>
+      <p class="eyebrow eyebrow-light">{{ page.advocacy.eyebrow }}</p>
+      <h2 id="adv-h">{{ page.advocacy.title }}</h2>
+      <p>{{ page.advocacy.text }}</p>
+      <p class="cta-row">
+        {% for a in page.advocacy.actions %}<a class="btn {{ 'btn-light' if loop.first else 'btn-outline-light' }}" href="{{ a.href }}">{{ a.label }}</a>{% endfor %}
+      </p>
+    </div>
+    <div class="advocacy-art">{{ figure('advocacy-meeting', page.advocacy.alt, none, 'figure')|safe }}</div>
+  </div>
+</section>
+
+<section class="home-about" aria-labelledby="ha-h">
+  <div class="wrap home-about-grid">
+    <h2 id="ha-h" class="section-h">{{ page.about.title }}</h2>
+    <p>{{ page.about.text|safe }}</p>
+  </div>
+</section>
+{% endblock %}
