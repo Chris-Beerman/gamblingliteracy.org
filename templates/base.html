@@ -8,6 +8,8 @@
 <link rel="canonical" href="{{ site.url }}{{ path }}">
 {% if page and page.noindex %}<meta name="robots" content="noindex">{% endif %}
 <link rel="icon" href="/static/mark.svg" type="image/svg+xml">
+<link rel="icon" href="/static/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/static/apple-touch-icon.png">
 <meta name="color-scheme" content="light">
 <meta name="theme-color" content="#FBF7F0">
 <meta property="og:site_name" content="{{ site.title }}">
@@ -16,9 +18,13 @@
 <meta property="og:description" content="{{ self.description() }}">
 <meta property="og:url" content="{{ site.url }}{{ path }}">
 <meta property="og:image" content="{{ site.url }}/static/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gambling Literacy: gambling education for the adults who reach young people. A teacher talks with two students.">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&amp;family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/static/style.css">
 <script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "WebSite", "@id": site.url ~ "/#website", "name": site.title, "url": site.url ~ "/", "description": site.descriptor, "inLanguage": "en", "publisher": {"@type": "Person", "@id": site.url ~ "/about/#editor", "name": site.editor.name, "url": site.url ~ "/about/"}}|tojson }}</script>
 {% block head %}{% endblock %}
@@ -32,8 +38,8 @@
       {% for item in nav %}
       <a href="{{ item.href }}"{% if path.startswith(item.href) %} aria-current="{{ 'page' if path == item.href else 'true' }}"{% endif %}>{{ item.label }}</a>
       {% endfor %}
-      <a class="nav-help" href="/get-help/"{% if path == '/get-help/' %} aria-current="page"{% endif %}>Get help</a>
     </nav>
+    <a class="nav-help" href="/get-help/"{% if path == '/get-help/' %} aria-current="page"{% endif %}>Get help</a>
   </div>
 </header>
 <main id="main">
@@ -64,7 +70,7 @@
         <p class="colophon-help"><strong>Worried about a young person right now?</strong> Call or text <a href="tel:{{ site.helplines.national.tel }}">{{ site.helplines.national.label }}</a> about gambling, or <a href="tel:988">988</a> in a crisis. <a href="/get-help/">More support</a>.</p>
       </div>
       <div>
-        <p><a href="/educators/">For Educators</a><br><a href="/educators/understanding-risk/">Understanding risk</a><br><a href="/educators/when-to-start/">When to start the conversation</a><br><a href="/educators/conversation-guide/">Conversation guide</a><br><a href="/get-help/">Finding support</a></p>
+        <p><a href="/educators/">For Educators</a><br><a href="/educators/understanding-risk/">Understanding risk</a><br><a href="/educators/when-to-start/">When to start the conversation</a><br><a href="/educators/conversation-guide/">The conversation guide</a><br><a href="/get-help/">Get help</a></p>
       </div>
       <div>
         <p><a href="/research-and-advocacy/">Research &amp; Advocacy</a><br><a href="/research-and-advocacy/#for-schools">Priorities for schools</a><br><a href="/about/">About</a><br><a href="/about/#standards">Editorial standards</a><br><a href="/style-guide/">Design &amp; illustration guide</a><br><a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></p>

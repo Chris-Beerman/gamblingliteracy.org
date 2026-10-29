@@ -60,7 +60,7 @@ Citations are Markdown footnotes (`[^dowling2017]` in the text, `[^dowling2017]:
 ## Local use
 
 ```
-pip install -r requirements.txt pytest
+pip install -r requirements.txt pytest html5lib
 python -m pipeline.build
 python -m pytest -q
 python -m http.server -d _site 8000

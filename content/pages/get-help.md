@@ -1,12 +1,12 @@
 ---
-title: Finding support
-short: Finding support
+title: Get help
+short: Get help
 slug: get-help
 parent: educators
 step: 4
 series: true
-seo_title: "Help for Youth Gambling: Helplines and Support for Teens, Parents and Educators"
-description: Free, confidential helplines and support for young people affected by gambling, and for the parents, educators and coaches worried about them, including national, Illinois and crisis lines.
+seo_title: "Youth Gambling Help: Helplines for Teens and Parents"
+description: Free, confidential helplines and support for young people affected by gambling and for the parents, educators and coaches worried about them.
 deck: Who to call, text or talk to when a young person's gambling worries you, or when a young person is worried about someone else.
 hero: finding-support
 hero_alt: A school counselor and a student sit facing each other and talk; a heart floats between them.
@@ -68,11 +68,11 @@ Some young people find it easier to start with a peer. Teen Line isn't a gamblin
 ::: practical "If you're an educator worried about a student"
 1. Talk with the student first, calmly and privately. The [conversation guide](/educators/conversation-guide/#if-a-young-person-says-they-already-gamble) has suggestions.
 2. Bring in your school counselor or student support team, following your school's procedures.
-3. Share the helpline numbers above with the student, and with parents or carers where appropriate.
+3. Share the helpline numbers above with the student, and with parents or caregivers where appropriate.
 4. Don't keep notes or records about a student beyond what your school's procedures require, and never share a student's details outside them.
 :::
 
-## For parents and carers
+## For parents and caregivers
 
 - **Call the helpline yourself.** 1-800-MY-RESET and, in Illinois, 1-800-GAMBLER both help family members, including parents of teenagers.
 - **Use the controls you already have.** Phones, app stores, game consoles and bank cards have settings that limit purchases and block gambling apps. They won't stop a determined teenager, but they remove easy access.

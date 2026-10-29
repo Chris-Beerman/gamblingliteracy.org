@@ -5,8 +5,8 @@ slug: educators/when-to-start
 parent: educators
 step: 2
 series: true
-seo_title: "When to Talk to Kids About Gambling: Ages, Transitions and Everyday Moments"
-description: What research does and doesn't say about the best time for gambling education, the developmental stages and transitions when young people meet gambling, and everyday moments adults can use to start talking.
+seo_title: "When to Talk to Kids About Gambling: Ages and Moments"
+description: What research says about timing, the ages and transitions when young people meet gambling, and the everyday moments adults can use to start talking.
 deck: There is no proven "right age." But young people meet gambling at predictable points, and adults who are ready for those moments get more chances to help.
 hero: when-to-start
 hero_alt: A parent and child walk a winding path past stepping stones marked with a game controller, a ball, a phone, a birthday cake and a graduation cap.
@@ -61,7 +61,7 @@ The ages below are rough. Young people differ, and so do families and communitie
 Some moments bring a change in access, money or independence all at once. They are natural points for a check-in.
 
 ::: research "Research finding: young adults bet at high rates"
-- In a 2023 NCAA survey of 3,527 people aged 18–22, **58%** had done at least one sports betting activity, and **6%** of respondents said they had lost more than $500 on sports betting in a single day.[^ncaa2023] (An online panel survey, released by the NCAA, not peer-reviewed.)
+- In a 2023 NCAA survey of 3,527 people aged 18–22, **58%** had done at least one sports betting activity, and **6%** reported having lost more than $500 on sports betting in a single day.[^ncaa2023] (An online panel survey, released by the NCAA, not peer-reviewed.)
 - In Illinois, adults aged 18–24 had the highest rate of past-month sports betting of any age group, at **13.2%**, in a 2021 statewide gambling assessment.[^il2021]
 :::
 

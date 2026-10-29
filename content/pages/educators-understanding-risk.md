@@ -6,10 +6,10 @@ parent: educators
 step: 1
 series: true
 seo_title: "Youth Gambling Risk Factors: What Educators Should Know"
-description: What research says about which young people may be at greater risk of gambling-related harm, the difference between starting to gamble and developing problems, protective factors, and the limits of what risk factors can tell you.
+description: Which young people are at greater risk of gambling harm, what protects them, the difference between starting and escalating, and the limits of risk factors.
 deck: Some young people are more likely than others to run into trouble with gambling. Knowing the patterns helps you notice, but it can't tell you any one student's future.
 hero: understanding-risk
-hero_alt: A teenager stands at the centre of rings showing home, friends, school, screens and sport.
+hero_alt: A teenager stands at the center of rings showing home, friends, school, screens and sport.
 reviewed: 2026-10-25
 next_review: 2027-04-01
 ---
@@ -18,7 +18,7 @@ next_review: 2027-04-01
 
 - **Most young people who gamble do not develop problems.** But a minority do, and gambling problems can start in the teenage years.
 - **Risk factors cluster.** The young people at higher risk of later gambling harm are often the same young people at risk of other problems: those who are impulsive, use alcohol or drugs, or are depressed. Boys are at higher risk than girls.
-- **Starting and escalating are different questions.** What gets young people to try gambling is mostly social: family, friends, access and attitudes. What turns gambling into harm is more about the individual's mental health and behaviour.
+- **Starting and escalating are different questions.** What gets young people to try gambling is mostly social: family, friends, access and attitudes. What turns gambling into harm is more about the individual's mental health and behavior.
 - **No checklist predicts a child's future.** Risk factors describe patterns across large groups. Use them to decide where to pay attention and how to offer support, never to label a student.
 
 ## How common is youth gambling?
@@ -44,7 +44,7 @@ Researchers distinguish between factors linked to **participation** (whether a y
 ### What's linked to starting
 
 ::: research
-A 2021 review of adolescent gambling found that **gambling by parents, family and friends, and approving attitudes towards it** were consistently linked with young people gambling. Social influences appeared to matter more for participation than psychological ones.[^riley2021] Participation is higher among older children and boys.[^ohid2023]
+A 2021 review of adolescent gambling found that **gambling by parents, family and friends, and approving attitudes toward it** were consistently linked with young people gambling. Social influences appeared to matter more for participation than psychological ones.[^riley2021] Participation is higher among older children and boys.[^ohid2023]
 
 In a 2026 Australian survey of 1,183 parents, **parents making it easier for their teenager to gamble** (such as placing bets for them, or involving them in the parent's own gambling) was the strongest predictor of both teenage gambling and gambling problems.[^dittman2026]
 :::
@@ -58,7 +58,7 @@ A meta-analysis of 15 longitudinal studies, which followed young people over tim
 
 - **Substance use:** frequent alcohol use, cannabis, tobacco and other drug use
 - **Mental health and temperament:** depression, impulsivity, sensation seeking, an undercontrolled temperament
-- **Behaviour:** antisocial behaviour, violence, poor school performance, peers who engage in antisocial behaviour
+- **Behavior:** antisocial behavior, violence, poor school performance, peers who engage in antisocial behavior
 - **Gambling itself:** taking part in more types of gambling, and existing gambling problems
 - **Being male**
 
@@ -78,7 +78,7 @@ Many of the adults Chris Beerman treats for gambling describe a parent or grandp
 ## What protects young people
 
 ::: research
-Fewer studies look at protective factors than at risk factors. Among the few protective factors the longitudinal meta-analysis identified were **parental supervision** and **higher socio-economic status**.[^dowling2017] Its authors note that protective factors, and factors at the level of schools and communities, are understudied.
+Fewer studies look at protective factors than at risk factors. Among the few protective factors the longitudinal meta-analysis identified were **parental supervision** and **higher socioeconomic status**.[^dowling2017] Its authors note that protective factors, and factors at the level of schools and communities, are understudied.
 :::
 
 ::: practical
@@ -99,13 +99,13 @@ Risk isn't only about the individual. Young people today meet gambling and gambl
 ### Advertising
 
 ::: research
-Across age groups, including studies of young people, more exposure to gambling advertising is associated with more positive attitudes towards gambling, stronger intentions to gamble and more gambling, with some evidence that more exposure goes with more gambling.[^bouguettaya2020] Researchers disagree about how strongly this shows cause. One literature review found no longitudinal studies that could test it,[^newall2019] while an umbrella review concluded the evidence consistently supports a causal relationship, especially for children and young people.[^mcgrane2023] The Lancet Public Health Commission concludes that exposure to gambling advertising and marketing is associated with increased rates of problem gambling.[^wardle2024]
+Across age groups, including studies of young people, more exposure to gambling advertising is associated with more positive attitudes toward gambling, stronger intentions to gamble and more gambling, with some evidence that more exposure goes with more gambling.[^bouguettaya2020] Researchers disagree about how strongly this shows cause. One literature review found no longitudinal studies that could test it,[^newall2019] while an umbrella review concluded the evidence consistently supports a causal relationship, especially for children and young people.[^mcgrane2023] The Lancet Public Health Commission concludes that exposure to gambling advertising and marketing is associated with increased rates of problem gambling.[^wardle2024]
 :::
 
 ### Loot boxes and gambling-like games
 
 ::: research
-Across studies, spending on loot boxes (paid, randomized rewards in video games) is consistently linked with problem gambling. A review of 13 publications found a positive relationship in 12 of them.[^spicer2022] A UK survey of 16- to 18-year-olds found a moderate-to-large link.[^zendle2019] What these studies can't yet show is the **direction**: whether loot boxes lead young people towards gambling, or whether young people already drawn to gambling are drawn to loot boxes.
+Across studies, spending on loot boxes (paid, randomized rewards in video games) is consistently linked with problem gambling. A review of 13 publications found a positive relationship in 12 of them.[^spicer2022] A UK survey of 16- to 18-year-olds found a moderate-to-large link.[^zendle2019] What these studies can't yet show is the **direction**: whether loot boxes lead young people toward gambling, or whether young people already drawn to gambling are drawn to loot boxes.
 :::
 
 ::: open
@@ -116,7 +116,7 @@ Does early exposure to gambling-like game features cause later gambling for mone
 
 When gambling has started to cause harm, adults tend to notice changes in **money** (unexplained cash, borrowing, debts to friends, selling things), **mood** (irritability, anxiety or low mood tied to results), **secrecy** (hidden apps or accounts, lying about time or money), and **time** (gambling crowding out school, sport or friends).
 
-These are examples, not a screening tool. Many have ordinary explanations. If you notice several, talk with the young person and with your school counselor. The [conversation guide](/educators/conversation-guide/#if-a-young-person-says-they-already-gamble) covers how, and [finding support](/get-help/) covers where to turn.
+These are examples, not a screening tool. Many have ordinary explanations. If you notice several, talk with the young person and with your school counselor. The [conversation guide](/educators/conversation-guide/#if-a-young-person-says-they-already-gamble) covers how, and [Get help](/get-help/) covers where to turn.
 
 ## What this means for you
 

@@ -19,6 +19,7 @@ Citations use Markdown footnotes ([^key]) and render as a numbered source list.
 from __future__ import annotations
 
 import datetime as dt
+import html as html_mod
 import re
 import shutil
 import sys
@@ -65,14 +66,28 @@ FIG_RE = re.compile(r"^\{\{\s*figure\s+([a-z0-9-]+)\s*\|\s*(.*?)\s*(?:\|\s*(.*?)
 NOTE_OPEN = re.compile(r'^:::\s*([a-z]+)(?:\s+"(.*?)")?\s*$')
 
 
-def figure_html(name: str, alt: str, caption: str | None, cls: str = "figure") -> str:
+def figure_html(name: str, alt: str, caption: str | None, cls: str = "figure", eager: bool = False) -> str:
+    """An illustration. Hero figures load eagerly (they are the largest thing
+    above the fold); everything else lazily. Alt text is escaped: quotes in a
+    description must not end the attribute."""
     svg = STATIC / "illustrations" / f"{name}.svg"
     if not svg.exists():
         raise SystemExit(f"figure '{name}' has no file at {svg}")
     m = re.search(r'viewBox="0 0 (\d+) (\d+)"', svg.read_text(encoding="utf-8"))
     w, h = (m.group(1), m.group(2)) if m else ("760", "440")
-    cap = f"<figcaption>{caption}</figcaption>" if caption else ""
-    return (f'<figure class="{cls}"><img src="/static/illustrations/{name}.svg" alt="{alt}" width="{w}" height="{h}" loading="lazy" decoding="async">{cap}</figure>')
+    cap = f"<figcaption>{html_mod.escape(caption)}</figcaption>" if caption else ""
+    loading = 'loading="eager" fetchpriority="high"' if eager else 'loading="lazy"'
+    return (f'<figure class="{cls}"><img src="/static/illustrations/{name}.svg" alt="{html_mod.escape(alt or "", quote=True)}" '
+            f'width="{w}" height="{h}" {loading} decoding="async">{cap}</figure>')
+
+
+def split_sources(html: str) -> tuple[str, str]:
+    """Separate the rendered source list from the rest of a page so templates
+    can place it (inline on most pages, at the foot of the home page)."""
+    i = html.find('<section class="sources"')
+    if i < 0:
+        return html, ""
+    return html[:i], html[i:]
 
 
 def preprocess(text: str, site: dict) -> str:
@@ -84,11 +99,13 @@ def preprocess(text: str, site: dict) -> str:
         if m and m.group(1) in NOTE_LABELS:
             kind, title = m.group(1), m.group(2)
             label = title or NOTE_LABELS[kind]
-            out += ["", f'<aside class="note note-{kind}" markdown="1">', f'<p class="note-label">{label}</p>', ""]
+            # A div with role="note", not <aside>: an aside is a landmark, and
+            # landmarks nested inside <main> trip accessibility checkers.
+            out += ["", f'<div class="note note-{kind}" role="note" markdown="1">', f'<p class="note-label">{html_mod.escape(label)}</p>', ""]
             stack.append(kind)
         elif line.strip() == ":::" and stack:
             stack.pop()
-            out += ["", "</aside>", ""]
+            out += ["", "</div>", ""]
         else:
             out.append(line)
     if stack:
@@ -149,7 +166,8 @@ class Builder:
             out = "index.html" if slug == "home" else f"{slug}/index.html"
             if slug == "404":
                 out = "404.html"
-            self.render(meta.get("template", "page") + ".html", out, page=meta, body=html, toc=toc, pages=by_slug)
+            body, sources = split_sources(html)
+            self.render(meta.get("template", "page") + ".html", out, page=meta, body=body, sources=sources, toc=toc, pages=by_slug)
         self.render("sitemap.xml", "sitemap.xml", urls=sorted(self.urls))
         (SITE / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {self.site['url']}/sitemap.xml\n", encoding="utf-8")
         (SITE / "CNAME").write_text(self.site["canonical_domain"] + "\n", encoding="utf-8")

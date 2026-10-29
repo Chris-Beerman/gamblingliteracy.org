@@ -14,7 +14,7 @@
         <a class="btn btn-ghost" href="{{ page.hero.secondary.href }}">{{ page.hero.secondary.label }}</a>
       </p>
     </div>
-    <div class="home-hero-art">{{ figure('hero-conversation', page.hero.alt, none, 'figure figure-hero')|safe }}</div>
+    <div class="home-hero-art">{{ figure('hero-conversation', page.hero.alt, none, 'figure figure-hero', true)|safe }}</div>
   </div>
 </section>
 
@@ -75,7 +75,15 @@
 <section class="home-about" aria-labelledby="ha-h">
   <div class="wrap home-about-grid">
     <h2 id="ha-h" class="section-h">{{ page.about.title }}</h2>
-    <p>{{ page.about.text|safe }}</p>
+    <div>
+      <p>{{ page.about.text|safe }}</p>
+      {% if page.reviewed %}<p class="byline">This page was reviewed {{ page.reviewed|fmt_date }}{% if page.next_review %}; next review {{ page.next_review|fmt_date('month') }}{% endif %}. Every page shows its own review date.</p>{% endif %}
+    </div>
   </div>
 </section>
+{% if sources %}
+<div class="wrap home-sources">
+  <div class="prose">{{ sources|safe }}</div>
+</div>
+{% endif %}
 {% endblock %}

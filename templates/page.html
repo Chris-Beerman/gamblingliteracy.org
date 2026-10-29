@@ -13,18 +13,23 @@
       {% if page.reviewed %}<p class="byline">By <a href="/about/#editor">{{ site.editor.name }}, {{ site.editor.credentials }}</a>. Reviewed {{ page.reviewed|fmt_date }}{% if page.next_review %}; next review {{ page.next_review|fmt_date('month') }}{% endif %}.</p>{% endif %}
       {% if page.print %}<p class="print-actions"><button type="button" class="btn btn-ghost" onclick="window.print()">Print or save as PDF</button></p>{% endif %}
     </div>
-    {% if page.hero %}<div class="page-hero-art">{{ figure(page.hero, page.hero_alt or '', none, 'figure figure-hero')|safe }}</div>{% endif %}
+    {% if page.hero %}<div class="page-hero-art">{{ figure(page.hero, page.hero_alt or '', none, 'figure figure-hero', true)|safe }}</div>{% endif %}
   </div>
 </div>
 <div class="wrap page-body{% if toc|length > 2 and not page.no_toc %} has-toc{% endif %}">
   {% if toc|length > 2 and not page.no_toc %}
-  <nav class="toc" aria-label="On this page">
-    <p class="toc-title">On this page</p>
-    <ol>{% for t in toc %}{% if t.id != 'sources-h' %}<li><a href="#{{ t.id }}">{{ t.name|striptags }}</a></li>{% endif %}{% endfor %}</ol>
+  <nav class="toc-nav" aria-label="On this page">
+    {# Open on wide screens; a two-line script closes it on phones so it does not push the text down. #}
+    <details class="toc" open>
+      <summary class="toc-title">On this page</summary>
+      <ol>{% for t in toc %}{% if t.id != 'sources-h' %}<li><a href="#{{ t.id }}">{{ t.name|striptags }}</a></li>{% endif %}{% endfor %}</ol>
+    </details>
+    <script>if(matchMedia("(max-width: 960px)").matches){document.currentScript.previousElementSibling.removeAttribute("open")}</script>
   </nav>
   {% endif %}
   <article class="prose">
     {{ body|safe }}
+    {{ sources|safe }}
     {% if page.series %}
     <nav class="series" aria-label="The educator guide">
       <p class="series-title">The starting guide for educators</p>

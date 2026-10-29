@@ -3,8 +3,9 @@ title: Home
 slug: home
 template: home
 reviewed: 2026-10-25
-seo_title: "Gambling Literacy: youth gambling education for teachers, coaches and parents"
-description: Free, research-informed gambling education for middle- and high-school educators, counselors, coaches and parents. Who is at risk, when to start the conversation, and what to say.
+next_review: 2027-04-01
+seo_title: "Gambling Literacy: Gambling Education for Teachers & Parents"
+description: "Free, research-informed gambling education for teachers, counselors, coaches and parents: who is at risk, when to talk, and what to say."
 hero:
   eyebrow: Youth gambling education
   title: "Help young people understand gambling <em>before it understands them.</em>"
@@ -57,7 +58,7 @@ about:
   text: 'Gambling Literacy is written by <a href="/about/#editor">Chris Beerman, LCSW, CADC</a>, a clinical social worker in Chicago who treats adults with gambling problems and supports their families. It sits alongside the <a href="https://gambling-research.com/">Gambling Research Index</a>, which tracks the research, and his adult practice, <a href="https://www.chicagoaddictiontherapy.com/">Chicago Addiction Therapy</a>. It takes no money from the gambling industry. <a href="/about/">More about the initiative</a>.'
 ---
 
-Gambling has changed faster than most schools have. Since the Supreme Court's 2018 decision in *Murphy v. NCAA* let states legalize sports betting, most have. Odds, parlays and "boosts" now run through the sports young people watch, and gambling-like features are built into the games they play.
+Gambling has changed faster than most schools have. Since the Supreme Court's 2018 decision in *Murphy v. NCAA*, many states have legalized sports betting.[^wardle2024] Odds, parlays and "boosts" now run through the sports young people watch, and gambling-like features are built into the games they play.
 
 ::: research
 More than **1 in 6 adolescents** worldwide gambled in the past year.[^tran2024] In Minnesota's 2022 statewide student survey, **7.9%** of 8th, 9th and 11th graders gambled weekly or more often.[^king2025]
@@ -69,3 +70,4 @@ The young people most at risk of harm are often the ones already struggling: tho
 [^king2025]: King SM, Adamyk K, Weinburd J, Stinchfield R. Frequent and problem gambling in public school students. *JAMA Pediatrics*. 2025;179(7):799–801. [doi:10.1001/jamapediatrics.2025.0925](https://doi.org/10.1001/jamapediatrics.2025.0925).
 [^ohid2023]: Office for Health Improvement and Disparities (UK). *Gambling-related harms evidence review: summary*. January 2023. [gov.uk](https://www.gov.uk/government/publications/gambling-related-harms-evidence-review/gambling-related-harms-evidence-review-summary--2).
 [^cabrera2026]: Cabrera-Perona V, Tirado González S, Lloret-Irles D. Preventing gambling among adolescents: an umbrella review of school-based prevention programmes. *Journal of Prevention*. 2026. [doi:10.1007/s10935-026-00957-z](https://doi.org/10.1007/s10935-026-00957-z).
+[^wardle2024]: Wardle H, Degenhardt L, Marionneau V, et al. The Lancet Public Health Commission on gambling. *Lancet Public Health*. 2024;9(11):e950–e994. [doi:10.1016/S2468-2667(24)00167-1](https://doi.org/10.1016/S2468-2667(24)00167-1).

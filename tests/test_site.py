@@ -101,3 +101,25 @@ def test_every_page_has_title_description_and_one_h1(pages):
 def test_no_unreplaced_placeholders():
     bad = [str(f) for f in SITE.rglob("*.html") if re.search(r"\{\{|\}\}|:::", re.sub(r"<script.*?</script>", "", f.read_text(encoding="utf-8"), flags=re.S))]
     assert not bad, bad
+
+
+def test_html_parses_strictly(pages):
+    """html5lib in strict mode raises on the parse errors a browser would
+    silently recover from (an unescaped quote inside an attribute, say)."""
+    import html5lib
+
+    bad = []
+    for f in pages:
+        parser = html5lib.HTMLParser(strict=True)
+        try:
+            parser.parse(f.read_text(encoding="utf-8"))
+        except Exception as e:  # html5lib.html5parser.ParseError
+            bad.append(f"{f.relative_to(SITE)}: {e}")
+    assert not bad, "\n".join(bad)
+
+
+def test_titles_and_descriptions_fit_search_results(pages):
+    long_titles = [f"{f.relative_to(SITE)} ({len(c.title)}): {c.title}" for f, c in pages.items() if c.title and len(c.title) > 62]
+    long_descs = [f"{f.relative_to(SITE)} ({len(c.desc)})" for f, c in pages.items() if c.desc and len(c.desc) > 160]
+    assert not long_titles, "titles over 62 characters:\n" + "\n".join(long_titles)
+    assert not long_descs, "descriptions over 160 characters:\n" + "\n".join(long_descs)

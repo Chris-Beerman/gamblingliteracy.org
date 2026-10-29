@@ -8,15 +8,16 @@ deck: How Gambling Literacy looks, and why. Use this when you make a handout, a 
 hero: cast
 hero_alt: "The six recurring characters: Maya, Theo, Amira, Ms. Rivera, Coach Ben and Sam."
 reviewed: 2026-10-25
+next_review: 2027-04-01
 ---
 
 ## The idea in one paragraph
 
 The site is for busy adults who care about young people. It should feel like a well-made school handout from a thoughtful colleague: warm, calm, readable at a glance, and serious about harm without being alarming. The design never uses the visual language of gambling itself. There are no casino greens, no chip stacks, no flashing jackpots, and no money flying. Dice and coins appear only as **tools for teaching chance**, never as rewards.
 
-## Colour
+## Color
 
-Warm paper backgrounds, deep navy text, muted teal for links and structure, and orange used sparingly as an accent. Orange is never used for body text; when a label needs it, use the darker orange text colour.
+Warm paper backgrounds, deep navy text, muted teal for links and structure, and orange used sparingly as an accent. Orange is never used for body text; when a label needs it, use the darker orange text color.
 
 <ul class="swatches">
 <li><span style="background:#FBF7F0"></span><p><strong>Paper</strong><br>#FBF7F0<br>page background</p></li>
@@ -31,7 +32,7 @@ Warm paper backgrounds, deep navy text, muted teal for links and structure, and 
 <li><span style="background:#E9B95E"></span><p><strong>Mustard</strong><br>#E9B95E<br>illustration, highlights</p></li>
 </ul>
 
-All text and link colours meet WCAG AA contrast (4.5:1 or better) on the backgrounds they are used on.
+All text and link colors meet WCAG AA contrast (4.5:1 or better) on the backgrounds they are used on.
 
 ## Type
 
@@ -41,7 +42,7 @@ All text and link colours meet WCAG AA contrast (4.5:1 or better) on the backgro
 
 ## Editorial labels
 
-Every claim on the site is one of these kinds of statement, and the page says which. Use the same labels and colours in handouts and slides.
+Every claim on the site is one of these kinds of statement, and the page says which. Use the same labels and colors in handouts and slides.
 
 <ul class="label-key">
 <li><strong>Research finding</strong><br>what studies show, with the source linked</li>
@@ -49,16 +50,17 @@ Every claim on the site is one of these kinds of statement, and the page says wh
 <li class="k-advocacy"><strong>Advocacy recommendation</strong><br>what we think schools and communities should do</li>
 <li class="k-practical"><strong>Practical suggestion</strong><br>a sensible idea that has not been tested as such</li>
 <li class="k-open"><strong>Open question</strong><br>what nobody knows yet</li>
+<li class="k-practical"><strong>Try this</strong><br>an activity to run with students; practical, not a tested intervention</li>
 <li class="k-proposed"><strong>Proposed</strong><br>work we plan but have not done</li>
 </ul>
 
 ## Illustration
 
-The illustrations are original to Gambling Literacy and drawn from a small set of reusable parts, so new scenes stay consistent. They are generated from code in the repository (`pipeline/illustrate.py`), which means a change to a character's colours changes every scene at once.
+The illustrations are original to Gambling Literacy and drawn from a small set of reusable parts, so new scenes stay consistent. They are generated from code in the repository (`pipeline/illustrate.py`), which means a change to a character's colors changes every scene at once.
 
 ### The cast
 
-Six recurring characters appear across the site. Keep each one's colours, hair and accessories the same everywhere.
+Six recurring characters appear across the site. Keep each one's colors, hair and accessories the same everywhere.
 
 | Character | Who | Always wears |
 |---|---|---|
@@ -73,9 +75,9 @@ The cast reflects the range of students and adults in US schools without making 
 
 ### Shapes and proportions
 
-- **Rounded everything.** Bodies are soft rounded forms with no necks; arms are thick, round-ended strokes in the shirt colour; hands are simple circles.
+- **Rounded everything.** Bodies are soft rounded forms with no necks; arms are thick, round-ended strokes in the shirt color; hands are simple circles.
 - **Big heads, simple bodies.** A student's head is about a third of their height; an adult's slightly less, and adults stand about 15% taller.
-- **Flat colour, no outlines** on bodies, clothes or props. Depth comes from overlapping shapes, not shading. The only shadow is a faint oval under the feet.
+- **Flat color, no outlines** on bodies, clothes or props. Depth comes from overlapping shapes, not shading. The only shadow is a faint oval under the feet.
 
 ### Faces
 
@@ -89,16 +91,16 @@ One weight, 2.6 pixels at the standard scale, in navy, with round ends. It is us
 
 ### Backgrounds
 
-- Each scene sits on one soft, irregular blob in a tint colour (teal tint, peach tint or sand), with a few small dots or a four-point sparkle in orange or soft teal.
+- Each scene sits on one soft, irregular blob in a tint color (teal tint, peach tint or sand), with a few small dots or a four-point sparkle in orange or soft teal.
 - No rectangles, horizons or full backgrounds. On the page the scene sits on paper or a pale panel.
 
 ### Subjects
 
-Scenes show learning, conversation, social influence, digital advertising and understanding chance. Gambling products, when they appear, are generic and slightly abstracted: an offer card on a phone that says "+500", "FREE" or "BOOST", a plain ball on a TV. Never use a real operator's name, colours, logo or app, a real team, or a real league.
+Scenes show learning, conversation, social influence, digital advertising and understanding chance. Gambling products, when they appear, are generic and slightly abstracted: an offer card on a phone that says "+500", "FREE" or "BOOST", a plain ball on a TV. Never use a real operator's name, colors, logo or app, a real team, or a real league.
 
 ## Charts
 
-Research charts follow different rules from the illustrations. They must be **precise, labelled and sourced**: every chart says what is measured, in whom, where and when, and links the study. No decorative characters on charts, no 3D, no truncated axes without saying so. Use teal and navy for data; use orange only to highlight the one thing the chart is about.
+Research charts follow different rules from the illustrations. They must be **precise, labeled and sourced**: every chart says what is measured, in whom, where and when, and links the study. No decorative characters on charts, no 3D, no truncated axes without saying so. Use teal and navy for data; use orange only to highlight the one thing the chart is about.
 
 ## Alt text
 

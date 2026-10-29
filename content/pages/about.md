@@ -2,10 +2,11 @@
 title: About Gambling Literacy
 short: About
 slug: about
-seo_title: "About Gambling Literacy: who writes it, why, and how it is checked"
-description: Who writes Gambling Literacy, why it exists, how it relates to the Gambling Research Index and Chicago Addiction Therapy, and the editorial standards every page follows.
+seo_title: "About Gambling Literacy: Who Writes It, Why, and How"
+description: Who writes Gambling Literacy, why it exists, how it relates to the Gambling Research Index and Chicago Addiction Therapy, and its editorial standards.
 deck: A youth gambling education initiative, started small, written by a clinician who treats the adults that some of these young people grow up to be.
 reviewed: 2026-10-25
+next_review: 2027-04-01
 schema:
   "@context": https://schema.org
   "@type": Person
@@ -37,7 +38,7 @@ Gambling Literacy is an education and advocacy initiative for the adults who rea
 
 Young people are the reason it exists, but they are not its audience. The site gives adults plain explanations, conversation openers, classroom ideas and routes to support, and it argues for schools and communities to treat gambling the way they already treat alcohol, vaping and online safety: as something worth teaching about before it becomes a problem.
 
-It launched in October 2026 as a small site on purpose: [a starting guide for educators](/educators/), [one conversation guide](/educators/conversation-guide/) you can print and use, [a summary of the evidence and an advocacy agenda](/research-and-advocacy/), and [a support page](/get-help/). Larger pieces, such as lesson sequences, staff training and original research, will be added when they are ready and checked, and each will be labelled as new when it arrives.
+It launched in October 2026 as a small site on purpose: [a starting guide for educators](/educators/), [one conversation guide](/educators/conversation-guide/) you can print and use, [a summary of the evidence and an advocacy agenda](/research-and-advocacy/), and [a Get help page](/get-help/). Larger pieces, such as lesson sequences, staff training and original research, will be added when they are ready and checked, and each will be labeled as new when it arrives.
 
 ## Who writes it {#editor}
 
@@ -47,7 +48,7 @@ He is not a teacher and does not claim to know a classroom better than the peopl
 
 ## Why now
 
-Gambling has changed faster than most schools' health curricula. Sports betting is now legal in most US states, and betting ads, odds and "boosts" are woven into the sports young people watch. Gaming has its own chance-based purchases. Prediction markets and social casino apps blur the line further. Young people meet all of this long before they can legally bet, usually without an adult explaining how it works. The [Research and Advocacy](/research-and-advocacy/) page sets out what the evidence does and does not say about this.
+Gambling has changed faster than most schools' health curricula. Sports betting has been legalized in many US states since 2018,[^wardle2024] and betting ads, odds and "boosts" are woven into the sports young people watch. Gaming has its own chance-based purchases. Prediction markets and social casino apps blur the line further. Young people meet all of this long before they can legally bet, usually without an adult explaining how it works. The [Research and Advocacy](/research-and-advocacy/) page sets out what the evidence does and does not say about this.
 
 ## How the three sites fit together {#three-sites}
 
@@ -59,13 +60,13 @@ Chris Beerman's work on gambling happens in three places. Each has its own job, 
 <div class="card"><h3><a href="https://www.chicagoaddictiontherapy.com/">Chicago Addiction Therapy</a></h3><p><strong>Treatment for adults.</strong> His private practice in Chicago and online in Illinois and Minnesota. It treats adults (18 and over) and supports their partners and families, including parents worried about a child. <strong>It does not provide treatment to minors.</strong></p></div>
 </div>
 
-Gambling Literacy links to the other two only where that helps you: to the Research Index when you want the underlying studies, and to Chicago Addiction Therapy when the person who needs help is an adult. For young people who need support, it points to school-based and public resources on the [support page](/get-help/), not to the practice.
+Gambling Literacy links to the other two only where that helps you: to the Research Index when you want the underlying studies, and to Chicago Addiction Therapy when the person who needs help is an adult. For young people who need support, it points to school-based and public resources on the [Get help page](/get-help/), not to the practice.
 
 ## Editorial standards {#standards}
 
 Every page on this site follows these rules.
 
-**Claims are labelled.** Each statement is one of six kinds, and the page says which:
+**Claims are labeled.** Each statement is one of six kinds, and the page says which:
 
 <ul class="label-key">
 <li><strong>Research finding</strong><br>what studies show, with the source linked</li>
@@ -73,6 +74,7 @@ Every page on this site follows these rules.
 <li class="k-advocacy"><strong>Advocacy recommendation</strong><br>what we think schools and communities should do</li>
 <li class="k-practical"><strong>Practical suggestion</strong><br>a sensible idea that has not been tested as such</li>
 <li class="k-open"><strong>Open question</strong><br>what the research has not answered</li>
+<li class="k-practical"><strong>Try this</strong><br>an activity to run with students; practical, not a tested intervention</li>
 <li class="k-proposed"><strong>Proposed</strong><br>work we plan but have not done</li>
 </ul>
 
@@ -98,4 +100,6 @@ The site has no organizational status beyond being Chris Beerman's personal init
 
 ## Contact
 
-Questions, corrections, ideas, or a story about how you used something from this site: [{{CONTACT}}](mailto:{{CONTACT}}). Please don't send identifying information about a student. If you are worried about a young person right now, the [support page](/get-help/) lists who to call.
+Questions, corrections, ideas, or a story about how you used something from this site: [{{CONTACT}}](mailto:{{CONTACT}}). Please don't send identifying information about a student. If you are worried about a young person right now, the [Get help page](/get-help/) lists who to call.
+
+[^wardle2024]: Wardle H, Degenhardt L, Marionneau V, et al. The Lancet Public Health Commission on gambling. *Lancet Public Health*. 2024;9(11):e950–e994. [doi:10.1016/S2468-2667(24)00167-1](https://doi.org/10.1016/S2468-2667(24)00167-1).

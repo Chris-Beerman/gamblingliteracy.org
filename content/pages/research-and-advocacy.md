@@ -2,9 +2,9 @@
 title: Research and advocacy
 short: Research & Advocacy
 slug: research-and-advocacy
-seo_title: "Youth Gambling Prevention: What the Research Shows and What Schools Should Do"
-description: Plain-language summaries of the research on youth gambling, school-based prevention, advertising and loot boxes, with their limits; the questions Gambling Literacy wants answered; and priorities for schools and communities.
-deck: What the evidence shows, where it runs out, and what we think schools and communities should do about it. Research, our recommendations and our plans are labelled separately.
+seo_title: "Youth Gambling Prevention: Research and What Schools Can Do"
+description: Plain-language summaries of the research on youth gambling and school prevention, with their limits, plus priorities for schools and communities.
+deck: What the evidence shows, where it runs out, and what we think schools and communities should do about it. Research, our recommendations and our plans are labeled separately.
 hero: advocacy-meeting
 hero_alt: Adults around a community meeting table; one raises a hand. A banner reads "Prevention is on the agenda."
 reviewed: 2026-10-25
@@ -20,7 +20,7 @@ Research findings summarize published studies and link to them. Advocacy recomme
 ### How many young people gamble
 
 ::: research
-- Worldwide, about **18%** of adolescents gambled in the past year (17.9%), and about **10%** gambled online.[^tran2024][^wardle2024]
+- Worldwide, about **18%** of adolescents gambled in the past year (17.9%),[^tran2024] and about **10%** gambled online.[^wardle2024]
 - In Minnesota's 2022 student survey, **7.9%** of students in grades 8, 9 and 11 gambled weekly or more often.[^king2025]
 - In a 2023 NCAA survey of 18- to 22-year-olds, **58%** of respondents had done at least one sports betting activity.[^ncaa2023]
 :::
@@ -34,7 +34,7 @@ Reviews of school-based gambling education agree on two things.
 
 **Programs improve knowledge and beliefs.** Every study in a 2017 systematic review found effects on knowledge, perceptions or beliefs about gambling.[^keen2017] A 2026 umbrella review of seven reviews found programs "consistently improved knowledge and beliefs."[^cabrera2026]
 
-**Effects on behaviour are much less certain.** In the 2017 review, only 9 of 19 studies measured gambling behaviour, and only 5 of those found a change, with short follow-up.[^keen2017] The 2026 umbrella review described behavioural effects as "modest, inconsistent, and rarely sustained."[^cabrera2026]
+**Effects on behavior are much less certain.** In the 2017 review, only 9 of 19 studies measured gambling behavior, and only 5 of those found a change, with short follow-up.[^keen2017] The 2026 umbrella review described behavioral effects as "modest, inconsistent, and rarely sustained."[^cabrera2026]
 :::
 
 **Limitations.** The evidence base is small and weak. All seven reviews in the 2026 umbrella review were rated "critically low" quality on a standard appraisal tool, and they overlap heavily in the studies they include.[^cabrera2026] A 2023 review of 32 studies rated only 9 as good quality.[^monreal2023] Few studies follow students for long enough to see whether gambling problems are prevented.
@@ -44,7 +44,7 @@ Reviews of school-based gambling education agree on two things.
 ### Advertising
 
 ::: research
-Across age groups, including studies of young people, more exposure to gambling advertising is associated with more positive attitudes towards gambling, stronger intentions to gamble and more gambling, with some evidence of a dose-response relationship.[^bouguettaya2020]
+Across age groups, including studies of young people, more exposure to gambling advertising is associated with more positive attitudes toward gambling, stronger intentions to gamble and more gambling, with some evidence of a dose-response relationship.[^bouguettaya2020]
 :::
 
 **Limitations.** Most studies are cross-sectional. Researchers disagree about whether the evidence shows advertising causes these effects: one review found no longitudinal studies that could test it,[^newall2019] while an umbrella review judged the evidence consistently supportive of a causal link, especially for young people.[^mcgrane2023]
@@ -55,7 +55,7 @@ Across age groups, including studies of young people, more exposure to gambling 
 Spending on loot boxes in video games is consistently associated with problem gambling: 12 of 13 publications in one review found a positive link.[^spicer2022]
 :::
 
-**Limitations.** Nearly all studies are cross-sectional, so the direction is unknown: loot boxes may lead young people towards gambling, or young people inclined to gamble may be drawn to loot boxes.
+**Limitations.** Nearly all studies are cross-sectional, so the direction is unknown: loot boxes may lead young people toward gambling, or young people inclined to gamble may be drawn to loot boxes.
 
 ### Who is at greater risk
 
@@ -66,7 +66,7 @@ The research on risk and protective factors is summarized on [Understanding risk
 These are the questions Gambling Literacy wants to help answer. Some will be answered by others' research, which the [Research Index](https://gambling-research.com/) will track; some may become our own projects.
 
 ::: open
-1. **Timing.** Is there an age, grade or transition at which gambling education changes behaviour, not just knowledge?
+1. **Timing.** Is there an age, grade or transition at which gambling education changes behavior, not just knowledge?
 2. **Dose.** Do short, repeated conversations across several years work better than a single lesson?
 3. **Messenger.** Are coaches, teachers, counselors or parents more effective at reaching different young people?
 4. **New products.** How are young people encountering prediction markets, sweepstakes casinos and gambling-like game features, and how should education respond?

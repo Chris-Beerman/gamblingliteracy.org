@@ -45,12 +45,12 @@ h1, h2, h3 { font-family: var(--serif); color: var(--ink); font-weight: 600; let
 .wordmark img { width: 34px; height: 34px; }
 .wordmark em { font-style: italic; font-weight: 500; color: var(--teal); }
 .wordmark:hover { color: var(--ink); }
-.masthead nav { display: flex; flex-wrap: wrap; align-items: center; gap: .3rem 1.4rem; font-size: .95rem; font-weight: 500; }
+.masthead nav { display: flex; flex-wrap: wrap; align-items: center; gap: .3rem 1.4rem; font-size: .95rem; font-weight: 500; margin-left: auto; }
 .masthead nav a { color: var(--ink-2); text-decoration: none; padding: .35rem 0; border-bottom: 2px solid transparent; }
 .masthead nav a:hover { color: var(--ink); }
 .masthead nav a[aria-current] { color: var(--ink); border-bottom-color: var(--teal); }
-.masthead nav .nav-help { color: var(--ink); background: var(--orange-tint); border: 0; border-radius: 999px; padding: .35rem .95rem; }
-.masthead nav .nav-help:hover, .masthead nav .nav-help[aria-current] { background: var(--orange); color: var(--ink); }
+.masthead .nav-help { font-size: .95rem; font-weight: 600; color: var(--ink); background: var(--orange-tint); text-decoration: none; border-radius: 999px; padding: .4rem .95rem; white-space: nowrap; }
+.masthead .nav-help:hover, .masthead .nav-help[aria-current] { background: var(--orange); color: var(--ink); }
 
 /* Buttons */
 .cta-row { display: flex; flex-wrap: wrap; gap: .75rem; margin: 1.6rem 0 0; }
@@ -122,8 +122,11 @@ h1, h2, h3 { font-family: var(--serif); color: var(--ink); font-weight: 600; let
 .byline a { color: inherit; }
 .page-body { padding-top: 2rem; }
 .page-body.has-toc { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 3rem; align-items: start; }
-.toc { position: sticky; top: 1.2rem; font-size: .88rem; padding-top: .4rem; }
-.toc-title { font-weight: 700; font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2); margin: 0 0 .5rem; }
+.toc-nav { position: sticky; top: 1.2rem; font-size: .88rem; padding-top: .4rem; }
+.toc-title { font-weight: 700; font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2); margin: 0 0 .5rem; cursor: pointer; list-style: none; }
+.toc-title::-webkit-details-marker { display: none; }
+.toc-title::after { content: "▾"; margin-left: .4rem; font-size: .9em; }
+.toc[open] > .toc-title::after { content: "▴"; }
 .toc ol { list-style: none; margin: 0; padding: 0; border-left: 2px solid var(--rule); }
 .toc li { margin: 0; }
 .toc a { display: block; padding: .3rem 0 .3rem .9rem; color: var(--ink-2); text-decoration: none; line-height: 1.35; }
@@ -144,7 +147,10 @@ h1, h2, h3 { font-family: var(--serif); color: var(--ink); font-weight: 600; let
 .prose th, .prose td { text-align: left; vertical-align: top; padding: .65rem .9rem .65rem 0; border-bottom: 1px solid var(--rule); min-width: 9rem; }
 .prose th { font-weight: 700; border-bottom: 2px solid var(--ink); }
 .prose sup { font-size: .72em; line-height: 0; }
-.prose sup a { text-decoration: none; font-weight: 600; padding: 0 .1em; }
+/* Footnote markers stay underlined (colour alone does not mark a link) and get
+   a little room so they can be tapped on a phone. */
+.prose sup a { text-decoration: underline; text-underline-offset: .15em; font-weight: 600; padding: .25em .3em; margin: 0 .05em; border-radius: 4px; }
+.prose sup a:hover { background: var(--teal-tint); }
 .prose .figure { margin: 2rem 0; background: var(--paper-2); border-radius: 24px; padding: .8rem; }
 .prose figcaption { font-size: .86rem; color: var(--ink-2); padding: .5rem .6rem .2rem; }
 .lead { font-size: 1.15rem; }
@@ -186,6 +192,9 @@ h1, h2, h3 { font-family: var(--serif); color: var(--ink); font-weight: 600; let
 .card-link { text-decoration: none; color: inherit; display: block; transition: border-color .12s ease; }
 .card-link:hover { border-color: var(--teal); color: inherit; }
 .card-link:hover h3 { color: var(--teal); }
+.card-link { display: flex; flex-direction: column; }
+.card-cta { margin-top: auto !important; padding-top: .5rem; color: var(--teal); font-weight: 600; }
+.card-link:hover .card-cta { text-decoration: underline; }
 .card .n { font-family: var(--serif); font-size: 1.9rem; color: var(--orange-text); line-height: 1; margin: 0 0 .5rem; }
 
 .script { background: var(--card); border: 1px solid var(--rule); border-radius: 16px; padding: .4rem 1.2rem; margin: 1rem 0 1.4rem; }
@@ -204,7 +213,12 @@ h1, h2, h3 { font-family: var(--serif); color: var(--ink); font-weight: 600; let
 .sources ol { padding-left: 1.4rem; }
 .sources li { margin: .5rem 0; line-height: 1.5; }
 .sources li p { margin: 0; }
-.footnote-backref { text-decoration: none; margin-left: .3rem; }
+.footnote-backref { text-decoration: underline; text-underline-offset: 3px; margin-left: .3rem; padding: .2em .35em; border-radius: 4px; }
+.footnote-backref:hover { background: var(--teal-tint); }
+.home-sources { margin-top: 2.5rem; }
+.home-sources .prose { max-width: 72ch; }
+.home-sources .sources { margin-top: 0; padding-top: .8rem; border-top: 1px solid var(--rule); font-size: .82rem; color: var(--ink-2); }
+.home-sources .sources h2 { font-size: .95rem; color: var(--ink-2); }
 
 /* Series nav (educator guide) */
 .series { margin: 3rem 0 0; padding: 1.3rem 1.4rem; background: var(--paper-2); border-radius: var(--radius); }
@@ -256,7 +270,10 @@ h1, h2, h3 { font-family: var(--serif); color: var(--ink); font-weight: 600; let
   .q-card > :not(.q-spot) { grid-column: 2; }
   .q-spot { grid-row: 1 / span 4; width: 88px; height: 88px; margin: 0; }
   .page-body.has-toc { grid-template-columns: minmax(0, 1fr); gap: 0; }
-  .toc { position: static; margin-bottom: 1.6rem; }
+  .toc-nav { position: static; margin-bottom: 1.6rem; padding-top: 0; }
+  .toc { border: 1px solid var(--rule); border-radius: 12px; padding: .6rem .9rem; background: var(--card); }
+  .toc-title { margin: 0; }
+  .toc[open] > .toc-title { margin-bottom: .5rem; }
   .family-list { grid-template-columns: minmax(0, 1fr); }
   .colophon-grid { grid-template-columns: 1fr 1fr; }
   .colophon-grid > :first-child { grid-column: 1 / -1; }
@@ -265,7 +282,11 @@ h1, h2, h3 { font-family: var(--serif); color: var(--ink); font-weight: 600; let
 @media (max-width: 620px) {
   html { font-size: 100%; }
   .wrap { padding: 0 1rem; }
-  .masthead nav { gap: .2rem 1rem; font-size: .9rem; }
+  /* Phones: wordmark and "Get help" share the top row; the section links wrap beneath. */
+  .masthead-row { row-gap: .5rem; }
+  .wordmark { order: 1; }
+  .masthead .nav-help { order: 2; margin-left: auto; font-size: .9rem; padding: .35rem .85rem; }
+  .masthead nav { order: 3; flex-basis: 100%; gap: .2rem 1rem; font-size: .9rem; margin-left: 0; }
   .home-hero { padding-top: 2rem; }
   .q-card { grid-template-columns: minmax(0, 1fr); }
   .q-card > :not(.q-spot) { grid-column: 1; }
@@ -284,7 +305,7 @@ h1, h2, h3 { font-family: var(--serif); color: var(--ink); font-weight: 600; let
   @page { margin: 1.6cm; }
   html { font-size: 92%; }
   body { background: #fff; }
-  .masthead nav, .skip, .toc, .series, .print-actions, .colophon .family, .colophon-grid div:not(:first-child), .page-hero-art { display: none !important; }
+  .masthead nav, .masthead .nav-help, .skip, .toc-nav, .series, .print-actions, .colophon .family, .colophon-grid div:not(:first-child), .page-hero-art { display: none !important; }
   .masthead { border: 0; padding: 0 0 .5rem; }
   .page-hero, .page-hero.has-art { background: #fff; padding: 0 0 .6rem; }
   .page-body.has-toc { display: block; }

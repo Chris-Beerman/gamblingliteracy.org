@@ -1,13 +1,13 @@
 ---
 title: "Starting the conversation: an introductory guide"
-short: Conversation guide
+short: The conversation guide
 slug: educators/conversation-guide
 parent: educators
 step: 3
 series: true
 print: true
-seo_title: "How to Talk to Teens About Gambling: A Conversation Guide for Educators and Parents"
-description: A printable guide for teachers, counselors, coaches and parents on opening a conversation with young people about gambling, sports betting and loot boxes, explaining how the odds work, and responding if a young person already gambles.
+seo_title: "How to Talk to Teens About Gambling: A Printable Guide"
+description: "A printable guide for teachers, coaches and parents: openers, four ideas about odds and ads, a 20-minute activity, and what to do if a teen already bets."
 deck: Openers for the classroom, the team bus and the kitchen table; four ideas worth explaining; and what to do if a young person tells you they already bet. Print it, adapt it, use it.
 hero: conversation-couch
 hero_alt: A parent and a teenager sit on a couch and talk about what is on the teenager's phone.
@@ -16,7 +16,7 @@ next_review: 2027-04-01
 ---
 
 ::: practical "Educational resource"
-This is an **educational resource** for adults, written to help you start and sustain a conversation. It is not a curriculum that has been tested in trials, it is not a screening tool, and it cannot tell you whether a particular young person has a gambling problem. If you are worried about someone, go to [finding support](/get-help/).
+This is an **educational resource** for adults, written to help you start and sustain a conversation. It is not a curriculum that has been tested in trials, it is not a screening tool, and it cannot tell you whether a particular young person has a gambling problem. If you are worried about someone, go to [Get help](/get-help/).
 :::
 
 ## Before you start
@@ -71,7 +71,7 @@ Listen more than you talk. If a young person says something inaccurate ("you can
 
 These are the ideas adults most often find useful to explain. They are ordinary facts about how gambling works; explaining them is reasonable education, though research has not shown that knowing them on its own prevents harm (see [what the evidence says](/research-and-advocacy/#what-programs-change)).
 
-### 1. The odds are built to favour the house
+### 1. The odds are built to favor the house
 
 Every bet a sportsbook, casino or lottery offers is priced so that, across all the people betting, the operator keeps a share. That share is called the house edge or "the vig." Some individuals win sometimes, but the system is designed so that bettors as a group lose over time. Ask: *"If gamblers came out ahead on average, how would the company stay in business?"*
 
@@ -108,12 +108,12 @@ Stay calm. You are more useful to them as someone they can keep talking to than 
 - **Get curious about the details.** What do they play or bet on? With whom? Where does the money come from? How do they feel afterwards?
 - **Avoid lectures, shame and threats.** They tend to end the conversation, and the young person learns not to bring it up again.
 - **Ask about money and mood.** Borrowing, owing friends, selling things, hiding losses, or feeling anxious or low about it are reasons to involve more help.
-- **Know your role.** You don't need to fix it. Your job is to listen, stay connected, and know where to send them. Follow your school's procedures, and involve the school counselor and, where appropriate, parents or carers.
+- **Know your role.** You don't need to fix it. Your job is to listen, stay connected, and know where to send them. Follow your school's procedures, and involve the school counselor and, where appropriate, parents or caregivers.
 
 ::: clinical "Clinical perspective: what adults often notice"
 In the editor's experience treating adults and supporting parents, families often look back and remember things like these: a young person who always seemed to have, or need, money they couldn't explain; secrecy about apps or accounts; an unusual emotional investment in the scores of games they had no other reason to care about; borrowing from friends or siblings; irritability when a game didn't go their way.
 
-These are **examples, not a checklist**. Plenty of young people show some of them for ordinary reasons, and none of them diagnoses anything. If several are present and they worry you, talk with the young person and with your school counselor, and see [finding support](/get-help/).
+These are **examples, not a checklist**. Plenty of young people show some of them for ordinary reasons, and none of them diagnoses anything. If several are present and they worry you, talk with the young person and with your school counselor, and see [Get help](/get-help/).
 :::
 
 ## If you are worried
@@ -122,7 +122,7 @@ These are **examples, not a checklist**. Plenty of young people show some of the
 - **About gambling**: call or text **1-800-MY-RESET** (1-800-697-3738), the free, confidential National Problem Gambling Helpline. Parents, educators and young people can all call.
 - **At school**: bring in the school counselor, social worker or psychologist, and follow your school's procedures.
 
-[More on finding support →](/get-help/)
+[More on where to get help →](/get-help/)
 
 ## Adapting this guide
 
