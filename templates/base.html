@@ -22,9 +22,8 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Gambling Literacy: gambling education for the adults who reach young people. A teacher talks with two students.">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&amp;family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
+<link rel="preload" href="/static/fonts/public-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/static/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/static/style.css">
 <script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "WebSite", "@id": site.url ~ "/#website", "name": site.title, "url": site.url ~ "/", "description": site.descriptor, "inLanguage": "en", "publisher": {"@type": "Person", "@id": site.url ~ "/about/#editor", "name": site.editor.name, "url": site.url ~ "/about/"}}|tojson }}</script>
 {% block head %}{% endblock %}
@@ -49,9 +48,11 @@
 <footer class="colophon">
   <div class="wrap">
     <section class="family" aria-labelledby="family-h">
-      <h2 id="family-h" class="family-title">One clinician's work on gambling, in three places</h2>
-      <ul class="family-list">
-        {% for s in site.family %}
+      {# The adult practice is shown only where it is relevant (About, Get help); elsewhere the footer stays about education and research. #}
+      {% set show_practice = path in ['/about/', '/get-help/'] %}
+      <h2 id="family-h" class="family-title">{% if show_practice %}One clinician's work on gambling, in three places{% else %}Part of one clinician's work on gambling{% endif %}</h2>
+      <ul class="family-list{% if not show_practice %} family-list-two{% endif %}">
+        {% for s in site.family if show_practice or s.mark != 'therapy' %}
         <li class="family-item{% if s.mark == 'literacy' %} is-here{% endif %}">
           <span class="family-mark family-mark-{{ s.mark }}" aria-hidden="true"></span>
           <div>
@@ -62,7 +63,7 @@
         </li>
         {% endfor %}
       </ul>
-      <p class="family-more"><a href="/about/#three-sites">How the three sites fit together</a></p>
+      <p class="family-more"><a href="/about/#three-sites">How the editor's work fits together</a></p>
     </section>
     <div class="colophon-grid">
       <div>
@@ -74,7 +75,7 @@
         <p><a href="/educators/">For Educators</a><br><a href="/educators/understanding-risk/">Understanding risk</a><br><a href="/educators/when-to-start/">When to start the conversation</a><br><a href="/educators/conversation-guide/">The conversation guide</a><br><a href="/parents/">For parents</a><br><a href="/glossary/">Glossary</a><br><a href="/get-help/">Get help</a></p>
       </div>
       <div>
-        <p><a href="/research-and-advocacy/">Research &amp; Advocacy</a><br><a href="/research-and-advocacy/#for-schools">Priorities for schools</a><br><a href="/about/">About</a><br><a href="/about/#standards">Editorial standards</a><br><a href="/style-guide/">Design &amp; illustration guide</a><br><a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></p>
+        <p><a href="/research-and-advocacy/">Research &amp; Advocacy</a><br><a href="/research-and-advocacy/#for-schools">Priorities for schools</a><br><a href="/about/">About</a><br><a href="/about/#standards">Editorial standards</a><br><a href="/about/#privacy">Privacy</a><br><a href="/style-guide/">Design &amp; illustration guide</a><br><a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></p>
       </div>
     </div>
     <p class="colophon-fine">Educational information, not medical, legal or clinical advice, and not a screening or diagnostic tool. Text and illustrations are licensed <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: schools and youth organizations may print and share them with attribution. <a href="https://github.com/{{ site.github_repo }}">Source on GitHub</a>.</p>

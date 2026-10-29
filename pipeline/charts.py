@@ -67,7 +67,7 @@ def minnesota_grades():
         _hbar(rows, 40),
         ["Grade", "Gambled in the past year"],
         [(r[0], r[2]) for r in rows],
-        'Park E, <em>Gambling Behaviors of MN Students: Findings from the 2019 Minnesota Student Survey</em>, Minnesota Department of Human Services, October 2020. <a href="https://www.developtoolmn.org/dhs/assets/gambling-behavior-mn-students_tcm1053-450190.pdf">PDF</a>',
+        'Park E, <em>Gambling Behaviors of MN Students: Findings from the 2019 Minnesota Student Survey</em>, Minnesota Department of Human Services, October 2020. <a href="https://www.developtoolmn.org/dhs/assets/gambling-behavior-mn-students_tcm1053-450190.pdf">full report (PDF)</a>',
         "“Gambling” here includes playing cards and betting on games of skill (such as video games, pool or bowling) as well as the lottery, casinos and online gambling, so most of it is informal. One state, one year.",
     )
 

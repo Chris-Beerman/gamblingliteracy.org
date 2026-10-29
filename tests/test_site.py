@@ -148,3 +148,19 @@ def test_pdfs_exist_and_guide_fits_four_pages(pages):
     for name in ("conversation-guide-one-page", "parents-one-page"):
         one = (SITE / "downloads" / f"{name}.pdf").read_bytes()
         assert one.count(b"/Type /Page") - one.count(b"/Type /Pages") == 1, f"{name} must fit one page"
+
+
+def test_no_third_party_requests():
+    """The privacy note promises that pages make no requests to other servers:
+    no external stylesheets, fonts, scripts, images or frames."""
+    pat = re.compile(r'<(?:link|script|img|iframe|source)\b[^>]*\b(?:href|src)="(https?:)?//(?!gamblingliteracy\.org)', re.I)
+    bad = []
+    for f in SITE.rglob("*.html"):
+        for m in pat.finditer(f.read_text(encoding="utf-8")):
+            tag = f.read_text(encoding="utf-8")[m.start():m.start() + 120]
+            if 'rel="canonical"' in tag:
+                continue
+            bad.append(f"{f.relative_to(SITE)}: {tag}")
+    css = (SITE / "static" / "style.css").read_text(encoding="utf-8")
+    bad += [f"style.css: {u}" for u in re.findall(r'url\(["\']?(https?://[^)"\']+)', css)]
+    assert not bad, "\n".join(bad)
