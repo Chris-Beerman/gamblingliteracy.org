@@ -13,6 +13,7 @@ hero:
   alt: A teacher talks with two students; speech bubbles hold a die and a question mark.
   primary: {label: Start the educator guide, href: /educators/}
   secondary: {label: Bring it to your school, href: /research-and-advocacy/#take-action}
+  parents: 'Parent or caregiver? <a href="/parents/">Start here</a>.'
 questions_title: Three questions every adult can answer
 questions_deck: Everything on this site is organized around them.
 questions:
@@ -57,6 +58,8 @@ about:
   title: Who's behind this
   text: 'Gambling Literacy is written by <a href="/about/#editor">Chris Beerman, LCSW, CADC</a>, a clinical social worker in Chicago who treats adults with gambling problems and supports their families. It sits alongside the <a href="https://gambling-research.com/">Gambling Research Index</a>, which tracks the research, and his adult practice, <a href="https://www.chicagoaddictiontherapy.com/">Chicago Addiction Therapy</a>. It takes no money from the gambling industry. <a href="/about/">More about the initiative</a>.'
 ---
+
+**Gambling literacy** means understanding how chance and odds work, how gambling products and ads are designed, what it looks like when gambling starts to cause harm, and where to go for help. This site helps adults teach those four things. [More on the term](/glossary/#gambling-literacy).
 
 Gambling has changed faster than most schools have. Since the Supreme Court's 2018 decision in *Murphy v. NCAA*, many states have legalized sports betting.[^wardle2024] Odds, parlays and "boosts" now run through the sports young people watch, and gambling-like features are built into the games they play.
 

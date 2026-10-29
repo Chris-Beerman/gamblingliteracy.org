@@ -16,10 +16,10 @@ next_review: 2027-04-01
 
 ## The short version
 
-- **Most young people who gamble do not develop problems.** But a minority do, and gambling problems can start in the teenage years.
-- **Risk factors cluster.** The young people at higher risk of later gambling harm are often the same young people at risk of other problems: those who are impulsive, use alcohol or drugs, or are depressed. Boys are at higher risk than girls.
-- **Starting and escalating are different questions.** What gets young people to try gambling is mostly social: family, friends, access and attitudes. What turns gambling into harm is more about the individual's mental health and behavior.
-- **No checklist predicts a child's future.** Risk factors describe patterns across large groups. Use them to decide where to pay attention and how to offer support, never to label a student.
+- **Most young people who gamble don't develop problems.** But some do, and problems can start in the teenage years.
+- **Risk factors cluster.** The young people most at risk of gambling harm are often at risk of other problems too. They tend to be impulsive, use alcohol or drugs, or be depressed. Boys are at higher risk than girls.
+- **Starting and escalating are different.** Young people mostly start gambling for social reasons: family, friends, easy access. Whether it turns into harm depends more on their mental health and behavior.
+- **No checklist predicts a child's future.** Risk factors describe large groups. Use them to decide where to pay attention, never to label a student.
 
 ## How common is youth gambling?
 
@@ -27,7 +27,9 @@ next_review: 2027-04-01
 A 2024 meta-analysis in *The Lancet Public Health* estimated that about **18% of adolescents worldwide** (17.9%) gambled in the past year. There were too few data to estimate how many have gambling problems.[^tran2024]
 :::
 
-US data are patchy, because most state school surveys don't ask about gambling. Where they do, the numbers are not small.
+US data are patchy, because most state school surveys don't ask about gambling. Where they do, the numbers are not small, and gambling often starts before high school.
+
+{{ chart minnesota-grades }}
 
 ::: research
 - **Minnesota, 2022:** among 83,545 public school students in grades 8, 9 and 11, **7.9% gambled weekly or more**, and **0.7%** screened positive for problem gambling.[^king2025]
@@ -39,7 +41,7 @@ These figures come from different places, years and definitions. Don't compare t
 
 ## Starting to gamble versus developing problems
 
-Researchers distinguish between factors linked to **participation** (whether a young person gambles at all) and factors linked to **harm** (whether gambling becomes a problem). They overlap, but they are not the same, and they suggest different responses.
+Researchers separate two questions. What makes a young person **start** gambling? And what makes gambling turn into **harm**? The answers overlap, but they are not the same, and they call for different responses.
 
 ### What's linked to starting
 
@@ -49,7 +51,7 @@ A 2021 review of adolescent gambling found that **gambling by parents, family an
 In a 2026 Australian survey of 1,183 parents, **parents making it easier for their teenager to gamble** (such as placing bets for them, or involving them in the parent's own gambling) was the strongest predictor of both teenage gambling and gambling problems.[^dittman2026]
 :::
 
-Most of these studies are cross-sectional snapshots, so they show what goes together, not what causes what. The practical point still holds: young people mostly learn gambling from the people around them, and adults often make the first access easy.
+Most of these studies are one-time snapshots. They show what goes together, not what causes what. Still, the practical point holds: young people mostly learn gambling from the people around them, and adults often make the first bet easy.
 
 ### What's linked to later harm
 
@@ -85,7 +87,7 @@ Fewer studies look at protective factors than at risk factors. Among the few pro
 Things adults can do that fit what is known, though none has been tested specifically as gambling prevention:
 
 - **Stay connected and know what they're doing**, including online. Supervision showed up as protective, and it is something adults can influence.
-- **Don't make access easy.** Avoid buying lottery or scratch tickets for young people, placing bets for them, or making family events about betting.
+- **Don't make access easy.** Avoid buying scratch tickets for young people or placing bets for them. Many families bet together on big games; what matters is who places the bet, with whose money, and how normal it becomes.
 - **Talk about the advertising.** Help young people see how offers and odds are designed.
 - **Respond to the bigger picture.** Because gambling risk overlaps with substance use, depression and impulsivity, the support a young person gets for those problems is also relevant to gambling.
 :::
@@ -99,7 +101,9 @@ Risk isn't only about the individual. Young people today meet gambling and gambl
 ### Advertising
 
 ::: research
-Across age groups, including studies of young people, more exposure to gambling advertising is associated with more positive attitudes toward gambling, stronger intentions to gamble and more gambling, with some evidence that more exposure goes with more gambling.[^bouguettaya2020] Researchers disagree about how strongly this shows cause. One literature review found no longitudinal studies that could test it,[^newall2019] while an umbrella review concluded the evidence consistently supports a causal relationship, especially for children and young people.[^mcgrane2023] The Lancet Public Health Commission concludes that exposure to gambling advertising and marketing is associated with increased rates of problem gambling.[^wardle2024]
+People who see more gambling ads tend to like gambling more, plan to gamble more, and gamble more. This holds across age groups, including young people, and there is some evidence that more exposure goes with more gambling.[^bouguettaya2020]
+
+Researchers disagree about whether the ads cause it. One review found no long-term studies that could test cause.[^newall2019] Another concluded that the evidence does point to cause, especially for children and young people.[^mcgrane2023] The Lancet Public Health Commission links ad exposure to higher rates of problem gambling.[^wardle2024]
 :::
 
 ### Loot boxes and gambling-like games
@@ -120,7 +124,7 @@ When gambling has started to cause harm, adults tend to notice changes in **mone
 These are examples drawn from clinical experience, not a screening tool. Many have ordinary explanations.
 :::
 
-If you notice several, talk with the young person and with your school counselor. Counselors can use a validated screen; the [conversation guide](/educators/conversation-guide/#for-counselors-social-workers-and-psychologists) names one. The [conversation guide](/educators/conversation-guide/#if-a-young-person-says-they-already-gamble) covers how to raise it, and [Get help](/get-help/) covers where to turn.
+If you notice several, talk with the young person and with your school counselor. The [conversation guide](/educators/conversation-guide/#if-a-young-person-says-they-already-gamble) covers how to raise it and [names a validated screen](/educators/conversation-guide/#for-counselors-social-workers-and-psychologists) counselors can use. [Get help](/get-help/) covers where to turn.
 
 ## What this means for you
 

@@ -13,6 +13,7 @@
         <a class="btn btn-primary" href="{{ page.hero.primary.href }}">{{ page.hero.primary.label }}</a>
         <a class="btn btn-ghost" href="{{ page.hero.secondary.href }}">{{ page.hero.secondary.label }}</a>
       </p>
+      {% if page.hero.parents %}<p class="hero-parents">{{ page.hero.parents|safe }}</p>{% endif %}
     </div>
     <div class="home-hero-art">{{ figure('hero-conversation', page.hero.alt, none, 'figure figure-hero', true)|safe }}</div>
   </div>

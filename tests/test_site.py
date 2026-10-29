@@ -16,6 +16,7 @@ class Collector(HTMLParser):
         super().__init__()
         self.links, self.imgs, self.ids, self.title, self.desc, self.h1 = [], [], set(), None, None, 0
         self._in_title = False
+        self._svg = 0
 
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
@@ -25,7 +26,9 @@ class Collector(HTMLParser):
             self.links.append(a["href"])
         if tag == "img":
             self.imgs.append(a)
-        if tag == "title":
+        if tag == "svg":
+            self._svg += 1
+        if tag == "title" and not self._svg:  # SVG <title> elements are tooltips, not the page title
             self._in_title = True
         if tag == "meta" and a.get("name") == "description":
             self.desc = a.get("content")
@@ -33,6 +36,8 @@ class Collector(HTMLParser):
             self.h1 += 1
 
     def handle_endtag(self, tag):
+        if tag == "svg":
+            self._svg -= 1
         if tag == "title":
             self._in_title = False
 
@@ -140,5 +145,6 @@ def test_pdfs_exist_and_guide_fits_four_pages(pages):
     guide = (SITE / "downloads" / "conversation-guide.pdf").read_bytes()
     n = guide.count(b"/Type /Page") - guide.count(b"/Type /Pages")
     assert n <= 4, f"the conversation guide prints to {n} pages; keep it to four"
-    one = (SITE / "downloads" / "conversation-guide-one-page.pdf").read_bytes()
-    assert one.count(b"/Type /Page") - one.count(b"/Type /Pages") == 1, "the one-page guide must fit one page"
+    for name in ("conversation-guide-one-page", "parents-one-page"):
+        one = (SITE / "downloads" / f"{name}.pdf").read_bytes()
+        assert one.count(b"/Type /Page") - one.count(b"/Type /Pages") == 1, f"{name} must fit one page"

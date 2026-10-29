@@ -18,6 +18,7 @@ github_repo: Chris-Beerman/gamblingliteracy.org
 
 nav:
   - {label: For Educators, href: /educators/}
+  - {label: For Parents, href: /parents/}
   - {label: Research & Advocacy, href: /research-and-advocacy/}
   - {label: About, href: /about/}
 

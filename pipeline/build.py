@@ -13,6 +13,7 @@ shortcodes keep the editorial labels and illustrations consistent:
     :::
 
     {{ figure social-influence | Alt text describing the scene | Optional caption }}
+    {{ chart keen-funnel }}          a sourced research chart from pipeline/charts.py
 
 Citations use Markdown footnotes ([^key]) and render as a numbered source list.
 """
@@ -63,6 +64,7 @@ def fmt_date(value, style="long"):
 
 
 FIG_RE = re.compile(r"^\{\{\s*figure\s+([a-z0-9-]+)\s*\|\s*(.*?)\s*(?:\|\s*(.*?)\s*)?\}\}\s*$", re.M)
+CHART_RE = re.compile(r"^\{\{\s*chart\s+([a-z0-9-]+)\s*\}\}\s*$", re.M)
 NOTE_OPEN = re.compile(r'^:::\s*([a-z]+)(?:\s+"(.*?)")?\s*$')
 
 
@@ -81,6 +83,14 @@ def figure_html(name: str, alt: str, caption: str | None, cls: str = "figure", e
             f'width="{w}" height="{h}" {loading} decoding="async">{cap}</figure>')
 
 
+def chart_html(name: str) -> str:
+    from .charts import CHARTS
+
+    if name not in CHARTS:
+        raise SystemExit(f"unknown chart '{name}'")
+    return CHARTS[name]()
+
+
 def split_sources(html: str) -> tuple[str, str]:
     """Separate the rendered source list from the rest of a page so templates
     can place it (inline on most pages, at the foot of the home page)."""
@@ -93,6 +103,7 @@ def split_sources(html: str) -> tuple[str, str]:
 def preprocess(text: str, site: dict) -> str:
     text = text.replace("{{CONTACT}}", site["contact_email"])
     text = FIG_RE.sub(lambda m: "\n" + figure_html(m.group(1), m.group(2), m.group(3)) + "\n", text)
+    text = CHART_RE.sub(lambda m: "\n" + chart_html(m.group(1)) + "\n", text)
     out, stack = [], []
     for line in text.split("\n"):
         m = NOTE_OPEN.match(line)

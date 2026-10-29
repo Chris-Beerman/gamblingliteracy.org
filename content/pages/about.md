@@ -5,7 +5,7 @@ slug: about
 seo_title: "About Gambling Literacy: Who Writes It, Why, and How"
 description: Who writes Gambling Literacy, why it exists, how it relates to the Gambling Research Index and Chicago Addiction Therapy, and its editorial standards.
 deck: A youth gambling education initiative, started small, written by a clinician who treats the adults that some of these young people grow up to be.
-reviewed: 2026-10-25
+reviewed: 2026-10-29
 next_review: 2027-04-01
 schema:
   "@context": https://schema.org
@@ -30,11 +30,13 @@ schema:
 
 ## What this is
 
-Gambling Literacy is an education and advocacy initiative for the adults who reach young people: middle- and high-school teachers, school counselors, coaches, youth workers and parents. Its job is to help those adults answer three questions:
+Gambling Literacy is an education and advocacy initiative for the adults who reach young people: middle and high school teachers, school counselors, coaches, youth workers and [parents](/parents/). Its job is to help those adults answer three questions:
 
 1. **Who** may be at greater risk of gambling-related harm?
 2. **When** are there useful opportunities to reach them?
 3. **What** should we teach, say or do at that point?
+
+**Gambling literacy**, the idea the site is named for, means understanding four things: how chance and odds work; how gambling products and ads are designed to keep people playing; what it looks like when gambling starts to cause harm; and where to go for help. It is the gambling equivalent of media or financial literacy, and like them it is taught, not assumed.
 
 Young people are the reason it exists, but they are not its audience. The site gives adults plain explanations, conversation openers, classroom ideas and routes to support, and it argues for schools and communities to treat gambling the way they already treat alcohol, vaping and online safety: as something worth teaching about before it becomes a problem.
 

@@ -300,6 +300,36 @@ h1, h2, h3 { font-family: var(--serif); color: var(--ink); font-weight: 600; let
   .btn, .masthead nav a { transition: background-color .15s ease, color .15s ease, border-color .15s ease; }
 }
 
+/* Copyable text */
+.email-copy { margin: 1rem 0 1.6rem; }
+.email-copy pre { white-space: pre-wrap; font-family: var(--sans); font-size: .92rem; line-height: 1.5; background: var(--card); border: 1px solid var(--rule); border-radius: 12px; padding: 1rem 1.1rem; margin: 0 0 .7rem; max-height: 22rem; overflow: auto; }
+.copy-status { margin-left: .8rem; font-size: .9rem; color: var(--teal-deep); }
+.hero-parents { margin: 1rem 0 0; font-size: 1rem; color: var(--ink-2); }
+.hero-parents a { font-weight: 600; }
+
+/* Research charts (see /style-guide/#charts) */
+.chart { margin: 1.8rem 0; padding: 1.1rem 1.2rem 1rem; background: var(--card); border: 1px solid var(--rule); border-radius: 16px; }
+.chart-title { font-family: var(--serif); font-size: 1.2rem; font-weight: 600; margin: 0 0 .15rem; line-height: 1.3; }
+.chart-sub { font-size: .88rem; color: var(--ink-2); margin: 0 0 .9rem; }
+.hbars { max-width: 560px; border-left: 2px solid var(--rule); padding: .1rem 0 .1rem 0; }
+.hbar { display: block; margin: 0 0 .7rem; }
+.hbar:last-child { margin-bottom: .2rem; }
+.hbar-label { display: block; font-size: .95rem; color: var(--ink); margin: 0 0 .2rem .5rem; }
+.hbar-track { display: flex; align-items: center; gap: .5rem; padding-right: 6.5rem; }
+.hbar-fill { display: block; height: 1.6rem; background: var(--teal); border-radius: 0 4px 4px 0; flex: none; }
+.hbar-value { font-weight: 700; font-size: .95rem; color: var(--ink); white-space: nowrap; margin-right: -6.5rem; }
+.chart-table { margin: .7rem 0 .2rem; font-size: .88rem; }
+.chart-table summary { cursor: pointer; color: var(--teal); font-weight: 600; }
+.chart-table table { display: table; width: auto; margin: .5rem 0; }
+.chart-table td, .chart-table th { min-width: 8rem; }
+.chart figcaption { font-size: .82rem; color: var(--ink-2); line-height: 1.5; padding: .5rem 0 0; }
+.chart-note { display: block; margin-bottom: .3rem; }
+
+/* Glossary */
+.glossary dl { margin: .4rem 0 1.4rem; }
+.glossary dt { font-weight: 700; margin-top: 1rem; }
+.glossary dd { margin: .2rem 0 0; padding-left: 1rem; border-left: 3px solid var(--teal-tint); }
+
 /* Printables, worksheets and one-page sheets */
 .printables { margin: 1.2rem 0 1.8rem; padding: .8rem 1rem; border-radius: 12px; background: var(--paper-2); font-size: .95rem; }
 .printables p { margin: 0; }
@@ -377,6 +407,13 @@ h1, h2, h3 { font-family: var(--serif); color: var(--ink); font-weight: 600; let
   .sheet-foot { display: block; margin-top: .8rem; padding-top: .4rem; border-top: 1px solid var(--rule); font-size: .75rem; color: var(--ink-2); }
   .sheet .prose .figure { max-width: 3.4in; margin: 0 auto .6rem; padding: 0; background: #fff; }
   .worksheet { border: 0; padding: 0; margin: 0 0 .6rem; background: #fff; }
+  .chart { break-inside: avoid; background: #fff; }
+  .hbar-fill { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .chart-table { display: none; }
+  .email-copy pre { max-height: none; }
+  .copy-btn, .copy-status, .hero-parents { display: none; }
+  .glossary dt { break-after: avoid; }
+  .glossary dd { break-inside: avoid; }
   .worksheet-alt { break-before: page; }
   .worksheet h2 { margin: .8rem 0 .3rem; font-size: 1.15rem; }
   .blank.full { margin: .7rem 0 .4rem; }

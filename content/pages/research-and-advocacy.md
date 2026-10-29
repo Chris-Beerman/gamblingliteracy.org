@@ -7,7 +7,7 @@ description: Plain-language summaries of the research on youth gambling and scho
 deck: What the evidence shows, where it runs out, and what we think schools and communities should do about it. Research, our recommendations and our plans are labeled separately.
 hero: advocacy-meeting
 hero_alt: Adults around a community meeting table; one raises a hand. A banner reads "Prevention is on the agenda."
-reviewed: 2026-10-25
+reviewed: 2026-10-29
 next_review: 2027-04-01
 ---
 
@@ -36,6 +36,8 @@ Reviews of school-based gambling education agree on two things.
 
 **Effects on behavior are much less certain.** In the 2017 review, only 9 of 19 studies measured gambling behavior, and only 5 of those found a change, with short follow-up.[^keen2017] The 2026 umbrella review described behavioral effects as "modest, inconsistent, and rarely sustained."[^cabrera2026]
 :::
+
+{{ chart keen-funnel }}
 
 **Limitations.** The evidence base is small and weak. All seven reviews in the 2026 umbrella review were rated "critically low" quality on a standard appraisal tool, and they overlap heavily in the studies they include.[^cabrera2026] A 2023 review of 32 studies rated only 9 as good quality.[^monreal2023] Few studies follow students for long enough to see whether gambling problems are prevented.
 
@@ -111,11 +113,38 @@ You don't need permission to start a conversation with the people who decide wha
 
 <p class="cta-row"><a class="btn btn-primary" href="mailto:?subject=Gambling%20education%20at%20our%20school&amp;body=Hi%2C%0A%0AI%27d%20like%20to%20suggest%20we%20include%20gambling%20in%20our%20health%20and%20prevention%20education%2C%20alongside%20alcohol%2C%20vaping%20and%20online%20safety.%0A%0ASports%20betting%20ads%2C%20loot%20boxes%20and%20betting%20apps%20are%20now%20part%20of%20many%20students%27%20everyday%20lives%2C%20often%20well%20before%20they%20can%20legally%20bet.%20A%20free%20resource%20for%20educators%2C%20with%20a%20printable%20conversation%20guide%2C%20is%20at%20https%3A//gamblingliteracy.org/educators/%0A%0AThree%20questions%20we%20could%20start%20with%3A%0A1.%20Does%20our%20health%20curriculum%20mention%20gambling%2C%20sports%20betting%20or%20loot%20boxes%3F%0A2.%20Do%20our%20counselors%20and%20coaches%20know%20where%20to%20refer%20a%20student%20whose%20gambling%20worries%20them%3F%0A3.%20Could%20we%20share%20basic%20information%20and%20helpline%20numbers%20with%20families%3F%0A%0ACould%20we%20talk%20about%20this%20at%20a%20future%20meeting%3F%0A%0AThank%20you%2C">Open the email</a> <a class="btn btn-ghost" href="/educators/conversation-guide/">Share the conversation guide</a></p>
 
-The email asks three questions:
+If the button doesn't open your email (common on school Chromebooks), copy the text instead:
 
+<div class="email-copy">
+<pre id="advocacy-email" tabindex="0">Subject: Gambling education at our school
+
+Hi,
+
+I'd like to suggest we include gambling in our health and prevention education, alongside alcohol, vaping and online safety.
+
+Sports betting ads, loot boxes and betting apps are now part of many students' everyday lives, often well before they can legally bet. A free resource for educators, with a printable conversation guide, is at https://gamblingliteracy.org/educators/
+
+Three questions we could start with:
 1. Does our health curriculum mention gambling, sports betting or loot boxes?
 2. Do our counselors and coaches know where to refer a student whose gambling worries them?
 3. Could we share basic information and helpline numbers with families?
+
+Could we talk about this at a future meeting?
+
+Thank you,</pre>
+<button type="button" class="btn btn-ghost copy-btn" data-copy="advocacy-email">Copy the email text</button>
+<span class="copy-status" role="status" aria-live="polite"></span>
+</div>
+<script>
+document.querySelectorAll(".copy-btn").forEach(function (b) {
+  b.addEventListener("click", function () {
+    var t = document.getElementById(b.dataset.copy).innerText, s = b.nextElementSibling;
+    function done(msg) { s.textContent = msg; }
+    if (navigator.clipboard) { navigator.clipboard.writeText(t).then(function () { done("Copied. Paste it into a new email."); }, function () { done("Select the text above and copy it."); }); }
+    else { done("Select the text above and copy it."); }
+  });
+});
+</script>
 
 If your school takes something on, we'd like to hear about it: [{{CONTACT}}](mailto:{{CONTACT}}?subject=Our%20school%20and%20gambling%20education). Please don't include student information.
 

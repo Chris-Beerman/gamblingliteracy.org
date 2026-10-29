@@ -75,7 +75,7 @@ Some moments bring a change in access, money or independence all at once. They a
 - **Starting college, a job or the military.** Leaving home means less supervision, new peer groups and, for many, the first experience of managing money alone.
 - **The 21st birthday.** In Illinois, sports betting, casinos and video gaming terminals are legal at 21.[^il-sports][^il-casino][^il-vgt] Expect betting offers and advertising to become part of their feed.
 
-Minimum ages differ by product and by state. Check the rules where you are.
+Illinois appears here because it is where Gambling Literacy's editor practices. Minimum ages differ by product and by state, so check the rules where you are; the National Council on Problem Gambling lists [help and resources by state](https://www.ncpgambling.org/help-treatment/help-by-state/), and the Gambling Research Index tracks [new gambling laws](https://gambling-research.com/bills/).
 
 ## Everyday moments
 
