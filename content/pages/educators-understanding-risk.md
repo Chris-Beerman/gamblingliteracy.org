@@ -10,7 +10,7 @@ description: Which young people are at greater risk of gambling harm, what prote
 deck: Some young people are more likely than others to run into trouble with gambling. Knowing the patterns helps you notice, but it can't tell you any one student's future.
 hero: understanding-risk
 hero_alt: A teenager stands at the center of rings showing home, friends, school, screens and sport.
-reviewed: 2026-10-25
+reviewed: 2026-10-29
 next_review: 2027-04-01
 ---
 
@@ -114,9 +114,13 @@ Does early exposure to gambling-like game features cause later gambling for mone
 
 ## Signs that more support may be needed
 
+::: clinical
 When gambling has started to cause harm, adults tend to notice changes in **money** (unexplained cash, borrowing, debts to friends, selling things), **mood** (irritability, anxiety or low mood tied to results), **secrecy** (hidden apps or accounts, lying about time or money), and **time** (gambling crowding out school, sport or friends).
 
-These are examples, not a screening tool. Many have ordinary explanations. If you notice several, talk with the young person and with your school counselor. The [conversation guide](/educators/conversation-guide/#if-a-young-person-says-they-already-gamble) covers how, and [Get help](/get-help/) covers where to turn.
+These are examples drawn from clinical experience, not a screening tool. Many have ordinary explanations.
+:::
+
+If you notice several, talk with the young person and with your school counselor. Counselors can use a validated screen; the [conversation guide](/educators/conversation-guide/#for-counselors-social-workers-and-psychologists) names one. The [conversation guide](/educators/conversation-guide/#if-a-young-person-says-they-already-gamble) covers how to raise it, and [Get help](/get-help/) covers where to turn.
 
 ## What this means for you
 

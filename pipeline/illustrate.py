@@ -585,7 +585,41 @@ def mark():
             f'<circle cx="32" cy="29" r="6" fill="{C["orange"]}"/></svg>\n')
 
 
+def mock_ad():
+    """A made-up sportsbook welcome offer for the mock-ad worksheet. Fictional
+    brand, generic design; the fine print is printed as text on the sheet."""
+    b = [blob(380, 250, 330, 210, C["tealtint"], 14)]
+    # phone
+    b.append(f'<rect x="230" y="20" width="300" height="460" rx="40" fill="{C["navy"]}"/>')
+    b.append(f'<rect x="246" y="44" width="268" height="412" rx="24" fill="{C["white"]}"/>')
+    # header bar with fictional brand
+    b.append(f'<rect x="246" y="44" width="268" height="54" rx="24" fill="{C["navy2"]}"/><rect x="246" y="74" width="268" height="24" fill="{C["navy2"]}"/>')
+    b.append(f'<text x="380" y="79" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="17" fill="{C["white"]}" letter-spacing="2">SAMPLEBET</text>')
+    b.append(f'<text x="380" y="94" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="{C["sand"]}" letter-spacing="1">A MADE-UP BRAND FOR TEACHING</text>')
+    # offer
+    b.append(f'<text x="380" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="15" fill="{C["teal"]}" letter-spacing="1.5">WELCOME OFFER</text>')
+    b.append(f'<text x="380" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-weight="800" font-size="34" fill="{C["navy"]}">BET $5</text>')
+    b.append(f'<text x="380" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-weight="800" font-size="46" fill="{C["orange"]}">GET $200</text>')
+    b.append(f'<text x="380" y="268" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="16" fill="{C["navy"]}">in Bonus Bets*</text>')
+    b.append(sparkle(492, 168, 12, C["mustard"]))
+    b.append(sparkle(266, 150, 9, C["orange"]))
+    # boost chip
+    b.append(f'<rect x="276" y="290" width="208" height="40" rx="20" fill="{C["orangetint"]}"/>')
+    b.append(f'<text x="380" y="316" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="14" fill="{C["navy"]}">+ 50% PARLAY BOOST</text>')
+    # button
+    b.append(f'<rect x="286" y="352" width="188" height="48" rx="24" fill="{C["teal"]}"/>')
+    b.append(f'<text x="380" y="382" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="17" fill="{C["white"]}">CLAIM NOW</text>')
+    # fine print, deliberately tiny
+    for i, w in enumerate((220, 236, 200)):
+        b.append(f'<rect x="{380 - w / 2}" y="{418 + i * 9}" width="{w}" height="4" rx="2" fill="{C["navy"]}" opacity=".25"/>')
+    b.append(f'<text x="268" y="425" font-family="Arial, sans-serif" font-size="9" fill="{C["navy"]}" opacity=".6">*</text>')
+    b.append(dots([(130, 140), (640, 380), (110, 380)], C["orange"], 5))
+    b.append(dots([(660, 150)], C["teal2"], 5))
+    return svg(760, 500, "".join(b), "A made-up sportsbook ad on a phone: Bet $5, get $200 in bonus bets, with an asterisk and tiny fine print")
+
+
 SCENES = {
+    "mock-ad": mock_ad,
     "hero-conversation": scene_hero,
     "understanding-risk": scene_ecosystem,
     "when-to-start": scene_path,

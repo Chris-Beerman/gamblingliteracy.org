@@ -7,10 +7,12 @@ description: "A four-part guide for teachers, counselors, coaches and youth work
 deck: Four short parts, in order. Read the first two to understand what you're dealing with, use the third to start talking, and keep the fourth handy.
 hero: hero-conversation
 hero_alt: A teacher talks with two students; speech bubbles hold a die and a question mark.
-reviewed: 2026-10-25
+reviewed: 2026-10-29
 next_review: 2027-04-01
 no_toc: true
 ---
+
+<p class="shortcut"><strong>Short on time?</strong> Read <a href="/educators/conversation-guide/">the conversation guide</a> (or print <a href="/educators/conversation-guide/one-page/">the one-page version</a>) and keep the <a href="/get-help/">Get help</a> numbers handy. Come back for the rest.</p>
 
 <p class="lead">You don't need to be an expert on gambling to help. You already know how to talk with young people about hard topics. This guide gives you the gambling-specific parts: who tends to be at higher risk, which moments open the door, what to say, and where to send someone who needs more.</p>
 

@@ -1,4 +1,5 @@
 """Checks run on every build: links, anchors, images, alt text, titles."""
+import os
 import re
 from html.parser import HTMLParser
 from pathlib import Path
@@ -42,7 +43,12 @@ class Collector(HTMLParser):
 
 @pytest.fixture(scope="session")
 def pages():
-    Builder().build()
+    # CI builds and prints the PDFs before the tests run (GL_SKIP_BUILD=1);
+    # locally the fixture does both, so download links can be checked too.
+    if not os.environ.get("GL_SKIP_BUILD"):
+        Builder().build()
+        from pipeline.pdf import make_pdfs
+        make_pdfs()
     out = {}
     for f in SITE.rglob("*.html"):
         c = Collector()
@@ -123,3 +129,16 @@ def test_titles_and_descriptions_fit_search_results(pages):
     long_descs = [f"{f.relative_to(SITE)} ({len(c.desc)})" for f, c in pages.items() if c.desc and len(c.desc) > 160]
     assert not long_titles, "titles over 62 characters:\n" + "\n".join(long_titles)
     assert not long_descs, "descriptions over 160 characters:\n" + "\n".join(long_descs)
+
+
+def test_pdfs_exist_and_guide_fits_four_pages(pages):
+    from pipeline.pdf import pdf_pages
+
+    for _, name in pdf_pages():
+        f = SITE / "downloads" / f"{name}.pdf"
+        assert f.exists() and f.stat().st_size > 10_000, f"missing or empty PDF: {name}"
+    guide = (SITE / "downloads" / "conversation-guide.pdf").read_bytes()
+    n = guide.count(b"/Type /Page") - guide.count(b"/Type /Pages")
+    assert n <= 4, f"the conversation guide prints to {n} pages; keep it to four"
+    one = (SITE / "downloads" / "conversation-guide-one-page.pdf").read_bytes()
+    assert one.count(b"/Type /Page") - one.count(b"/Type /Pages") == 1, "the one-page guide must fit one page"

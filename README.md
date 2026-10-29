@@ -11,11 +11,12 @@ templates/               base.html (masthead, footer), page.html, home.html, sit
 static/                  style.css, mark.svg, og.png, illustrations/*.svg
 pipeline/build.py        renders _site/ from content/ and templates/
 pipeline/illustrate.py   draws the illustration set from code (python -m pipeline.illustrate)
+pipeline/pdf.py          prints every page with `pdf:` in its front matter to _site/downloads/
 tests/test_site.py       links, anchors, images, alt text, titles; runs on every deploy
 .github/workflows/       on every push to main: build, test, deploy to GitHub Pages
 ```
 
-A push to `main` rebuilds and publishes the site in about a minute. If a test fails (a broken internal link, an image without alt text), nothing is published.
+A push to `main` rebuilds the site, prints the PDFs and publishes it in about two minutes. If a test fails (a broken internal link, an image without alt text), nothing is published.
 
 ## Editing a page
 
@@ -53,6 +54,10 @@ Text in Markdown.
 
 Citations are Markdown footnotes (`[^dowling2017]` in the text, `[^dowling2017]: Full citation. [DOI](https://doi.org/...)` at the bottom) and render as a numbered source list. `{{CONTACT}}` is replaced with `contact_email` from `config/site.yml`.
 
+## Printables and PDFs
+
+Add `pdf: <name>` to a page's front matter and the build prints it to `/downloads/<name>.pdf` with the site's print stylesheet, so a PDF and a browser printout always match. Worksheets and one-page handouts use `template: sheet`. The tests fail if the conversation guide prints to more than four pages or the one-page version to more than one.
+
 ## Illustrations
 
 `python -m pipeline.illustrate` redraws every scene into `static/illustrations/`. The palette, the six recurring characters and the props are defined once at the top of `pipeline/illustrate.py`, so a change there changes every scene. The rules are written up for people at [/style-guide/](https://gamblingliteracy.org/style-guide/).
@@ -60,9 +65,10 @@ Citations are Markdown footnotes (`[^dowling2017]` in the text, `[^dowling2017]:
 ## Local use
 
 ```
-pip install -r requirements.txt pytest html5lib
-python -m pipeline.build
-python -m pytest -q
+pip install -r requirements.txt pytest html5lib playwright
+python -m playwright install chromium
+python -m pipeline.build && python -m pipeline.pdf
+python -m pytest -q                 # rebuilds and reprints, then checks everything
 python -m http.server -d _site 8000
 ```
 

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{# A printable sheet: a worksheet or one-page handout. Short on screen, one or two pages on paper. #}
+{% block title %}{{ page.seo_title or (page.title ~ " | " ~ site.title) }}{% endblock %}
+{% block description %}{{ page.description or site.descriptor }}{% endblock %}
+{% block body_class %}sheet printable page-{{ page.slug|replace('/', '-') }}{% endblock %}
+{% block content %}
+<div class="wrap sheet-wrap">
+  <div class="sheet-head">
+    {% if page.parent %}{% set parent = pages[page.parent] %}<p class="crumb"><a href="/{{ parent.slug }}/">{{ parent.short or parent.title }}</a> <span aria-hidden="true">·</span> Printable</p>{% endif %}
+    <h1>{{ page.title }}</h1>
+    {% if page.deck %}<p class="deck">{{ page.deck }}</p>{% endif %}
+    <p class="print-actions">
+      <button type="button" class="btn btn-primary" onclick="window.print()">Print</button>
+      {% if page.pdf %}<a class="btn btn-ghost" href="/downloads/{{ page.pdf }}.pdf" download>Download PDF</a>{% endif %}
+    </p>
+  </div>
+  <article class="prose sheet-body">
+    {{ body|safe }}
+    {{ sources|safe }}
+  </article>
+  <p class="sheet-foot">Gambling Literacy · {{ site.url|replace('https://', '') }}{{ path }}{% if page.reviewed %} · reviewed {{ page.reviewed|fmt_date('month') }}{% endif %} · free to copy and adapt with credit (CC BY 4.0)</p>
+</div>
+{% endblock %}

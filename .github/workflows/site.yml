@@ -25,14 +25,25 @@ jobs:
           python-version: "3.12"
           cache: pip
 
-      - run: pip install -r requirements.txt pytest html5lib
+      - run: pip install -r requirements.txt pytest html5lib playwright
+
+      - name: Install Chromium for printing the PDFs
+        run: python -m playwright install --with-deps chromium
 
       - name: Build the site
         run: python -m pipeline.build
 
-      # Every internal link, image and anchor must resolve, every image needs
-      # an alt attribute, and every page needs a title and description.
-      - name: Check links and accessibility basics
+      # Pages with `pdf:` in their front matter are printed with the site's own
+      # print stylesheet into _site/downloads/.
+      - name: Print the downloadable PDFs
+        run: python -m pipeline.pdf
+
+      # Every internal link (including the PDFs), image and anchor must resolve,
+      # every image needs alt text, HTML must parse strictly, titles and
+      # descriptions must fit search results, and the guide must fit 4 pages.
+      - name: Check links, accessibility basics and print length
+        env:
+          GL_SKIP_BUILD: "1"
         run: python -m pytest -q
 
       - uses: actions/upload-pages-artifact@v3

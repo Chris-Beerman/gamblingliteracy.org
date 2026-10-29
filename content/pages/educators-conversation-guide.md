@@ -6,12 +6,13 @@ parent: educators
 step: 3
 series: true
 print: true
+pdf: conversation-guide
 seo_title: "How to Talk to Teens About Gambling: A Printable Guide"
 description: "A printable guide for teachers, coaches and parents: openers, four ideas about odds and ads, a 20-minute activity, and what to do if a teen already bets."
 deck: Openers for the classroom, the team bus and the kitchen table; four ideas worth explaining; and what to do if a young person tells you they already bet. Print it, adapt it, use it.
 hero: conversation-couch
 hero_alt: A parent and a teenager sit on a couch and talk about what is on the teenager's phone.
-reviewed: 2026-10-25
+reviewed: 2026-10-29
 next_review: 2027-04-01
 ---
 
@@ -19,13 +20,19 @@ next_review: 2027-04-01
 This is an **educational resource** for adults, written to help you start and sustain a conversation. It is not a curriculum that has been tested in trials, it is not a screening tool, and it cannot tell you whether a particular young person has a gambling problem. If you are worried about someone, go to [Get help](/get-help/).
 :::
 
+<div class="printables" markdown="1">
+
+**Printables:** [this guide as a PDF](/downloads/conversation-guide.pdf) · [the guide on one page](/educators/conversation-guide/one-page/) · [dice tally sheet](/educators/conversation-guide/dice-tally/) · [mock-ad worksheet](/educators/conversation-guide/mock-ad/)
+
+</div>
+
 ## Before you start
 
 **Your goal is a conversation, not a warning.** Young people tend to tune out lectures, especially from adults who seem to know less about the apps and games than they do. Curiosity works better: you want to find out what they see, what they think, and what their friends do.
 
 **Pick an ordinary moment.** A betting ad during a game you are watching together, a news story, a new game a student mentions, a big tournament week. Moments that are already happening feel less like an intervention. [When to start the conversation](/educators/when-to-start/) has more on choosing a moment.
 
-**Know what you think.** Young people will ask whether you gamble. A short, honest answer ("I buy a lottery ticket sometimes; I've never bet on sports") keeps you credible.
+**Decide what you'll share about yourself.** Young people may ask whether you gamble. You don't have to answer, and many schools prefer staff keep personal details out of it. "I'd rather hear what you've noticed" works. If you do answer, keep it short and honest.
 
 **Know where help is.** Before you start, look up your school counselor's name and the [helplines](/get-help/), so you can point to them if the conversation turns serious.
 
@@ -38,12 +45,12 @@ Pick one that fits the setting. Rephrase it in your own words.
 In the classroom
 :   "Sports betting ads are everywhere during games now. What have you noticed in them? What are they trying to make you feel?"
 
-:   "If a game gives you a loot box or a mystery pack, do you know your odds of getting the item you want? Who decides those odds?"
+:   "Some games sell loot boxes or mystery packs, paid rewards where you don't know what you'll get. Do you know your odds of getting the item you want? Who decides those odds?"
 
-On a team or after practice
-:   "Some people bet on games they're watching or playing in. Has anyone ever offered you odds on one of our games, or asked you about the team for a bet?"
+With a team
+:   "Betting on high school and college games has become a big topic. Why do you think athletic associations and leagues have strict rules about players and betting?"
 
-:   "Pros get betting questions all the time now. Why do you think leagues have such strict rules about players and betting?"
+:   "Why might someone outside the team want to know about an injury or who's starting before a game?"
 
 At home
 :   "That ad just said 'risk-free bet.' What do you think that actually means?"
@@ -54,6 +61,13 @@ One-on-one (counselor, mentor)
 :   "Sometimes when students tell me they're stressed about money, gambling or betting apps are part of it. Is any of that going on for you or your friends?"
 
 </div>
+
+::: practical "Before you use these with a group"
+- **Ask about what people see, not what each person does.** In a class or on a team, ask "What do people your age say about it?" rather than "Have you bet?" Save personal questions for one-on-one conversations.
+- **Say up front what you'd have to pass on.** If your school's procedures require you to report certain things, tell students before they share, not after.
+- **Coaches: check the rules first.** Your state athletic association and league may have rules about betting and athletes. Know them before you raise the topic with a team.
+- **Don't show real betting ads or apps to students.** Use the [mock-ad worksheet](/educators/conversation-guide/mock-ad/) instead. It has the same tricks with none of the risk to you or your school.
+:::
 
 ## Keep it going
 
@@ -81,23 +95,23 @@ A coin that has landed heads five times in a row is still 50/50 on the next flip
 
 ### 3. "Free," "boosted" and "risk-free" are marketing
 
-Sign-up bonuses, free bets and odds boosts usually come with conditions: you have to deposit, wager a certain amount, or bet again before you can withdraw. They exist to get people to start and to keep betting. Ask students to read the fine print of a real ad (on screen, not by signing up) and find the catch.
+Sign-up bonuses, free bets and odds boosts usually come with conditions: you have to deposit, wager a certain amount, or bet again before you can withdraw. They exist to get people to start and to keep betting. The [mock-ad worksheet](/educators/conversation-guide/mock-ad/) has students find the catch in a made-up ad.
 
 ### 4. Knowing sports is not the same as beating the odds
 
-Sports betting feels like skill, and knowledge does matter a little. But prices already reflect what experts know, outcomes are noisy, and frequent bets let the house edge add up. Near-misses, "I was one leg away" parlays and big wins early on make people feel closer to winning than they are.
+Sports betting feels like skill, and knowledge does matter a little. But prices already reflect what experts know, outcomes are noisy, and frequent bets let the house edge add up. A parlay is one bet that combines several picks (each one is called a leg) and pays only if every pick wins. Near-misses, "I was one leg away" parlays and big wins early on make people feel closer to winning than they are.
 
 {{ figure understanding-chance | A coach points at a chart of dice rolls that come out nearly even, while a student raises a hand. | Rolling a die many times shows each number coming up about equally often, whatever happened on the last roll. }}
 
 ## A short activity: rolling for "due" {#activity}
 
 ::: try "Try this: 20 minutes, a die per pair"
-1. In pairs, students roll a die 60 times and tally each number.
-2. Before they start, ask each pair to predict: after rolling three of the same number, is that number now more or less likely?
+1. In pairs, students roll a die 60 times and record each roll on the [dice tally sheet](/educators/conversation-guide/dice-tally/).
+2. Before they start, ask each pair to predict: after rolling the same number three times, is that number now more or less likely?
 3. Pool the class results on the board. Each number should land close to 1 in 6 overall, and rolls after a streak look like every other roll.
 4. Discuss: *Where do people believe a win is "due"? In sports betting? In games with loot boxes?*
 
-This is a practical classroom suggestion, not a tested intervention.
+No dice? Flip coins instead: 50 flips per pair, and look at what comes after three heads in a row. Both versions are on the tally sheet. This is a practical classroom suggestion, not a tested intervention.
 :::
 
 ## If a young person says they already gamble
@@ -110,11 +124,27 @@ Stay calm. You are more useful to them as someone they can keep talking to than 
 - **Ask about money and mood.** Borrowing, owing friends, selling things, hiding losses, or feeling anxious or low about it are reasons to involve more help.
 - **Know your role.** You don't need to fix it. Your job is to listen, stay connected, and know where to send them. Follow your school's procedures, and involve the school counselor and, where appropriate, parents or caregivers.
 
+### If the family is involved
+
+A common answer is "my dad does it" or "we have a family pool." Don't criticize the family. Ask who places the bets, whose money it is, and how often it happens, and talk about what the young person notices. "What's it like when your team loses and money's on it?" keeps the conversation going without putting them in the middle.
+
+::: research
+In a 2026 Australian survey of 1,183 parents, parents making it easier for their teenager to gamble, such as placing bets on their behalf, was the strongest predictor of both teenage gambling and gambling problems. The survey was cross-sectional and parent-reported, so it shows what goes together, not what causes what.[^dittman2026]
+:::
+
 ::: clinical "Clinical perspective: what adults often notice"
 In the editor's experience treating adults and supporting parents, families often look back and remember things like these: a young person who always seemed to have, or need, money they couldn't explain; secrecy about apps or accounts; an unusual emotional investment in the scores of games they had no other reason to care about; borrowing from friends or siblings; irritability when a game didn't go their way.
 
 These are **examples, not a checklist**. Plenty of young people show some of them for ordinary reasons, and none of them diagnoses anything. If several are present and they worry you, talk with the young person and with your school counselor, and see [Get help](/get-help/).
 :::
+
+### For counselors, social workers and psychologists
+
+::: research "Research finding: a validated three-question screen"
+The **Brief Adolescent Gambling Screen (BAGS)** is a three-question screen for gambling problems in young people aged 12 to 19, developed against the DSM-5 criteria for gambling disorder. Its authors placed it in the public domain, so it is free to use. They recommend a score of 2 or more in clinical settings as the point to refer for a full assessment. It was validated in a small sample of 105 Canadian adolescents, using the same sample to choose the questions and to test them, so its accuracy is probably overstated.[^stinchfield2017]
+:::
+
+A screen is not a diagnosis. Use it only within your role, your training and your school's procedures, and have a referral route ready before you use it. Teachers and coaches should not screen students; the conversation and the referral are their part.
 
 ## If you are worried
 
@@ -123,7 +153,11 @@ These are **examples, not a checklist**. Plenty of young people show some of the
 - **At school**: bring in the school counselor, social worker or psychologist, and follow your school's procedures.
 
 [More on where to get help →](/get-help/)
+{: .screen-only}
 
 ## Adapting this guide
 
 Use it freely. It is licensed CC BY 4.0, so you can copy, print, translate or rework it for your school, team or organization as long as you credit Gambling Literacy. If you adapt it, we'd like to hear how: [{{CONTACT}}](mailto:{{CONTACT}}?subject=How%20I%20used%20the%20conversation%20guide). Please don't include any identifying details about students.
+
+[^dittman2026]: Dittman CK, Hunter MC, Gossner M, et al. The role of parents in adolescent gambling participation and gambling problems. *Journal of Gambling Studies*. 2026;42(3):993–1019. [doi:10.1007/s10899-026-10520-4](https://doi.org/10.1007/s10899-026-10520-4).
+[^stinchfield2017]: Stinchfield R, Wynne H, Wiebe J, Tremblay J. Development and psychometric evaluation of the Brief Adolescent Gambling Screen (BAGS). *Frontiers in Psychology*. 2017;8:2204. [doi:10.3389/fpsyg.2017.02204](https://doi.org/10.3389/fpsyg.2017.02204). New York State OASAS uses the BAGS with the same cutoff of 2 for adolescent intakes: [oasas.ny.gov](https://oasas.ny.gov/bags-screening).

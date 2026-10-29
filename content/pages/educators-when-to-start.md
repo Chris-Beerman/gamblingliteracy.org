@@ -10,7 +10,7 @@ description: What research says about timing, the ages and transitions when youn
 deck: There is no proven "right age." But young people meet gambling at predictable points, and adults who are ready for those moments get more chances to help.
 hero: when-to-start
 hero_alt: A parent and child walk a winding path past stepping stones marked with a game controller, a ball, a phone, a birthday cake and a graduation cap.
-reviewed: 2026-10-25
+reviewed: 2026-10-29
 next_review: 2027-04-01
 ---
 
@@ -34,7 +34,7 @@ Since no age is proven, a sensible approach is to **meet young people at the poi
 
 ## Stages and what young people meet
 
-The ages below are rough. Young people differ, and so do families and communities.
+The ages below are rough. Young people differ, and so do families and communities. The products listed are what young people commonly encounter; the suggestions for what to teach at each stage are practical ideas, not a tested sequence.
 
 {{ figure social-influence | Friends watch a game on TV; one holds a phone out toward the others. }}
 
@@ -42,19 +42,25 @@ The ages below are rough. Young people differ, and so do families and communitie
 
 **What they meet:** loot boxes, card packs and spin-to-win features in games; free-to-play "social casino" apps; scratch tickets as gifts; betting ads during games they watch with family.
 
-**What they can learn:** this is when probability enters the math curriculum, and when young people can start to grasp that chance has no memory. It's a good stage for the [dice activity](/educators/conversation-guide/#activity) and for asking who decides the odds in a game.
+::: practical "What they can learn"
+This is when probability enters the math curriculum, and when young people can start to grasp that chance has no memory. It's a good stage for the [dice activity](/educators/conversation-guide/#activity) and for asking who decides the odds in a game.
+:::
 
 ### Early high school (about 14–16)
 
 **What they meet:** sports fandom that comes wrapped in odds, parlays and "boosts"; friendly bets and pools with friends; fantasy sports; influencers and streamers who gamble on camera; friends who claim to win.
 
-**What they can learn:** how advertising works and who it's aimed at; the difference between knowing sports and beating a price; what chasing losses looks like.
+::: practical "What they can learn"
+How advertising works and who it's aimed at; the difference between knowing sports and beating a price; what chasing losses looks like.
+:::
 
 ### Late high school (about 16–18)
 
 **What they meet:** their own money from jobs; more unsupervised time online; peers who bet through older friends, borrowed accounts or unlicensed offshore sites; in many states, the legal lottery at 18.
 
-**What they can learn:** how sign-up offers and "risk-free" bets work; how to recognize when gambling is causing problems for themselves or a friend; where help is.
+::: practical "What they can learn"
+How sign-up offers and "risk-free" bets work; how to recognize when gambling is causing problems for themselves or a friend; where help is.
+:::
 
 ## Transitions worth planning for
 

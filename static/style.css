@@ -300,19 +300,88 @@ h1, h2, h3 { font-family: var(--serif); color: var(--ink); font-weight: 600; let
   .btn, .masthead nav a { transition: background-color .15s ease, color .15s ease, border-color .15s ease; }
 }
 
-/* Print: the conversation guide and any page print as a clean handout */
+/* Printables, worksheets and one-page sheets */
+.printables { margin: 1.2rem 0 1.8rem; padding: .8rem 1rem; border-radius: 12px; background: var(--paper-2); font-size: .95rem; }
+.printables p { margin: 0; }
+.shortcut { margin: 0 0 1.2rem; padding: .8rem 1rem; border-radius: 12px; background: var(--orange-tint); }
+.shortcut a { color: var(--ink); text-decoration-thickness: 1.5px; }
+.print-url, .sheet-foot { display: none; }
+.sheet-wrap { padding-top: 2rem; }
+.sheet-head { max-width: var(--measure); }
+.sheet-head h1 { font-size: clamp(1.8rem, 1.3rem + 1.8vw, 2.5rem); line-height: 1.1; margin: .2rem 0 .7rem; font-weight: 500; }
+.sheet-head .print-actions { display: flex; flex-wrap: wrap; gap: .7rem; margin: 1rem 0 1.6rem; }
+.sheet-body { max-width: 760px; }
+.worksheet { background: var(--card); border: 1px solid var(--rule); border-radius: 16px; padding: .4rem 1.4rem 1.2rem; margin: 0 0 1.4rem; }
+.worksheet h2 { font-size: 1.25rem; margin: 1.4rem 0 .5rem; }
+.worksheet table { display: table; }
+.worksheet td, .worksheet th { min-width: 0; height: 2.4rem; border: 1px solid var(--rule); padding: .3rem .5rem; text-align: center; }
+.worksheet th:first-child, .worksheet td:first-child { text-align: left; font-weight: 600; width: 7rem; }
+.blank { display: inline-block; min-width: 8rem; border-bottom: 1.5px solid var(--ink-2); height: 1.4em; vertical-align: bottom; }
+.blank.short { min-width: 3rem; }
+.blank.wide { min-width: 16rem; }
+.blank.full { display: block; width: 100%; margin: .5rem 0 .3rem; }
+.choices { font-size: 1.02rem; }
+.coin-grid { display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 4px; margin: .8rem 0 1rem; max-width: 520px; }
+.coin-grid span { aspect-ratio: 1; border: 1.5px solid var(--ink-2); border-radius: 6px; }
+.fineprint { font-size: .78rem; line-height: 1.45; color: var(--ink-2); border-top: 1px dashed var(--rule); padding-top: .6rem; margin: -.8rem 0 1rem; }
+.fineprint p { line-height: 1.45; }
+.onepage-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0 2.2rem; }
+.onepage-grid h2 { font-size: 1.25rem; margin: 1rem 0 .4rem; }
+.onepage-grid ul, .onepage-grid ol { padding-left: 1.1rem; }
+.onepage-grid li { margin: .2rem 0; }
+.onepage-line { margin: .35rem 0; }
+.onepage-line strong { display: block; font-family: var(--serif); font-size: 1.4rem; }
+@media (max-width: 720px) { .onepage-grid { grid-template-columns: minmax(0, 1fr); } }
+
+/* Print: every page prints as a clean handout with its address on it. */
 @media print {
-  @page { margin: 1.6cm; }
-  html { font-size: 92%; }
+  @page { size: letter; margin: 1.1cm 1.4cm; }
+  html { font-size: 80%; }
   body { background: #fff; }
-  .masthead nav, .masthead .nav-help, .skip, .toc-nav, .series, .print-actions, .colophon .family, .colophon-grid div:not(:first-child), .page-hero-art { display: none !important; }
-  .masthead { border: 0; padding: 0 0 .5rem; }
-  .page-hero, .page-hero.has-art { background: #fff; padding: 0 0 .6rem; }
+  .masthead nav, .masthead .nav-help, .skip, .toc-nav, .series, .print-actions, .printables, .shortcut, .colophon .family, .colophon-grid div:not(:first-child), .page-hero-art, .page-body .prose .figure { display: none !important; }
+  .masthead { border: 0; padding: 0 0 .3rem; }
+  .masthead-row { justify-content: flex-start; }
+  .print-url { display: block; font-size: .8rem; color: var(--ink-2); margin: .1rem 0 0; }
+  .page-hero, .page-hero.has-art { background: #fff; padding: 0 0 .4rem; border-bottom: 1px solid var(--rule); }
+  .page-hero h1 { font-size: 1.9rem; margin: .1rem 0 .4rem; }
+  .deck { font-size: 1.02rem; margin-bottom: .3rem; }
+  .page-body { padding-top: .8rem; }
   .page-body.has-toc { display: block; }
   .prose { max-width: none; }
-  .note, .script, .card { break-inside: avoid; background: #fff !important; }
-  .prose h2 { break-after: avoid; margin-top: 1.6rem; }
+  .prose h2 { break-after: avoid; margin: 1.2rem 0 .4rem; font-size: 1.35rem; }
+  .prose h3 { break-after: avoid; margin: .9rem 0 .25rem; font-size: 1.1rem; }
+  .prose p, .prose li { orphans: 3; widows: 3; line-height: 1.45; }
+  .prose p { margin: .5rem 0; }
+  .prose li { margin: .15rem 0; }
+  .note { break-inside: avoid; background: #fff !important; margin: .7rem 0; padding: .45rem .85rem; }
+  .script { background: #fff !important; padding: .1rem .9rem; }
+  .script dd { break-inside: avoid; margin-bottom: .5rem; font-size: 1.02rem; }
+  .script dt { break-after: avoid; margin-top: .6rem; }
+  .card { break-inside: avoid; background: #fff !important; }
   a { color: var(--ink); text-decoration: none; }
   .prose a[href^="http"]::after { content: " (" attr(href) ")"; font-size: .8em; color: var(--ink-2); word-break: break-all; }
-  .colophon { margin-top: 1.5rem; background: #fff; padding: .8rem 0 0; }
+  .prose a[href^="/"]:not(.btn)::after { content: " (gamblingliteracy.org" attr(href) ")"; font-size: .8em; color: var(--ink-2); }
+  .prose sup a::after, .footnote-backref { display: none; }
+  .prose sup a { padding: 0; }
+  .sources { margin-top: .8rem; padding-top: .4rem; font-size: .72rem; }
+  .sources h2 { font-size: .95rem; margin: 0 0 .2rem; }
+  .sources li { margin: .15rem 0; }
+  .colophon { margin-top: 1rem; background: #fff; padding: .6rem 0 0; font-size: .8rem; }
+  .colophon-grid { display: block; }
+  /* Sheets: no site footer, just a one-line credit with the address. */
+  .printable .colophon, .screen-only { display: none !important; }
+  .printable .page-hero .crumb { display: none; }
+  .sheet-wrap { padding-top: 0; }
+  .sheet-head h1 { font-size: 1.8rem; margin: .2rem 0 .3rem; }
+  .sheet-head .crumb { display: none; }
+  .sheet-foot { display: block; margin-top: .8rem; padding-top: .4rem; border-top: 1px solid var(--rule); font-size: .75rem; color: var(--ink-2); }
+  .sheet .prose .figure { max-width: 3.4in; margin: 0 auto .6rem; padding: 0; background: #fff; }
+  .worksheet { border: 0; padding: 0; margin: 0 0 .6rem; background: #fff; }
+  .worksheet-alt { break-before: page; }
+  .worksheet h2 { margin: .8rem 0 .3rem; font-size: 1.15rem; }
+  .blank.full { margin: .7rem 0 .4rem; }
+  .onepage-grid { grid-template-columns: 1fr 1fr; gap: 0 1.6rem; font-size: 1.22rem; }
+  .onepage-grid li, .onepage-grid p { line-height: 1.45; }
+  .onepage-grid h2 { margin: .8rem 0 .35rem; font-size: 1.45rem; }
+  .page-educators-conversation-guide-one-page .sheet-head .deck { display: none; }
 }

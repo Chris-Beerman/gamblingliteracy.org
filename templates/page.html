@@ -11,7 +11,7 @@
       <h1>{{ page.title }}</h1>
       {% if page.deck %}<p class="deck">{{ page.deck }}</p>{% endif %}
       {% if page.reviewed %}<p class="byline">By <a href="/about/#editor">{{ site.editor.name }}, {{ site.editor.credentials }}</a>. Reviewed {{ page.reviewed|fmt_date }}{% if page.next_review %}; next review {{ page.next_review|fmt_date('month') }}{% endif %}.</p>{% endif %}
-      {% if page.print %}<p class="print-actions"><button type="button" class="btn btn-ghost" onclick="window.print()">Print or save as PDF</button></p>{% endif %}
+      {% if page.print %}<p class="print-actions">{% if page.pdf %}<a class="btn btn-primary" href="/downloads/{{ page.pdf }}.pdf" download>Download PDF</a> {% endif %}<button type="button" class="btn btn-ghost" onclick="window.print()">Print</button></p>{% endif %}
     </div>
     {% if page.hero %}<div class="page-hero-art">{{ figure(page.hero, page.hero_alt or '', none, 'figure figure-hero', true)|safe }}</div>{% endif %}
   </div>

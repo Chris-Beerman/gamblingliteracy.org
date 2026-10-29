@@ -41,6 +41,7 @@
     </nav>
     <a class="nav-help" href="/get-help/"{% if path == '/get-help/' %} aria-current="page"{% endif %}>Get help</a>
   </div>
+  <p class="wrap print-url">{{ site.url|replace('https://', '') }}{{ path }}{% if page and page.reviewed %} · reviewed {{ page.reviewed|fmt_date('month') }}{% endif %}</p>
 </header>
 <main id="main">
 {% block content %}{% endblock %}
