@@ -8,7 +8,7 @@ alt_domain: gamblingliteracy.com     # forwards (301) to the .org in Squarespace
 
 editor:
   name: Chris Beerman
-  credentials: LCSW, CADC
+  credentials: LCSW, CADC, PCGC
 
 # Set up forwarding for this address in Squarespace (Domains → gamblingliteracy.org
 # → Email → Email forwarding) before launch; see README, "Handoff".

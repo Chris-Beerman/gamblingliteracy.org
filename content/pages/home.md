@@ -56,7 +56,7 @@ advocacy:
   alt: Adults around a community meeting table; one raises a hand. A banner reads "Prevention is on the agenda."
 about:
   title: Who's behind this
-  text: 'Gambling Literacy is written by <a href="/about/#editor">Chris Beerman, LCSW, CADC</a>, a clinical social worker in Chicago who treats adults with gambling problems and supports their families. It sits alongside the <a href="https://gambling-research.com/">Gambling Research Index</a>, which tracks the research, and his adult practice, <a href="https://www.chicagoaddictiontherapy.com/">Chicago Addiction Therapy</a>. It takes no money from the gambling industry. <a href="/about/">More about the initiative</a>.'
+  text: 'Gambling Literacy is written by <a href="/about/#editor">Chris Beerman, LCSW, CADC, PCGC</a>, a clinical social worker in Chicago who treats adults with gambling problems and supports their families. It sits alongside the <a href="https://gambling-research.com/">Gambling Research Index</a>, which tracks the research, and his adult practice, <a href="https://www.chicagoaddictiontherapy.com/">Chicago Addiction Therapy</a>. It takes no money from the gambling industry. <a href="/about/">More about the initiative</a>.'
 ---
 
 **Gambling literacy** means understanding how chance and odds work, how gambling products and ads are designed, what it looks like when gambling starts to cause harm, and where to go for help. This site helps adults teach those four things. [More on the term](/glossary/#gambling-literacy).
